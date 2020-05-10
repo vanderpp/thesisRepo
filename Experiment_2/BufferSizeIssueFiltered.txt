@@ -1,0 +1,266 @@
+first line: Plutorun started on Tue Dec 3 12:12:28 CET 2019
+key: 43c98a582477a9fbaa8e39a14146da7c362e49d09ef89a02ae848dd552c1e344
+iv: 1a4ec593a38c81603190c20e96b74acf
+
+first line: 
+key: 43c98a582477a9fbaa8e39a14146da7c362e49d09ef89a02ae848dd552c1e344
+iv: 1a4ec593a38c81603190c20e96b74acf
+
+first line: | *received 76 bytes from 10.0.2.15:500 on enp0s3 (port=500) at 2019-12-03 12:12:48
+key: None
+iv: 4cb48994776a5d5429e8a334727d3deb
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+first line: Plutorun started on Tue Dec 3 12:13:02 CET 2019
+key: 985f58f4bf59aec0f0d942eccb32ef5b37b2117d1ebd7b48f1c9d42d0de9b73d
+iv: d0d1a60c46e120e9e4399a705971807d
+
+first line: 
+key: 985f58f4bf59aec0f0d942eccb32ef5b37b2117d1ebd7b48f1c9d42d0de9b73d
+iv: d0d1a60c46e120e9e4399a705971807d
+
+first line: 
+key: None
+iv: None
+    raise AttributeError(attr)
+AttributeError: vendorID
+
+first line: Plutorun started on Tue Dec 3 12:14:09 CET 2019
+key: 594ec082b005d120aeaf7ac8a4785b49dd71ef70cdd9c05ecd3f59a2d0a22137
+iv: b309c63e1eefe707c43d776df8fad429
+
+first line: 
+key: 594ec082b005d120aeaf7ac8a4785b49dd71ef70cdd9c05ecd3f59a2d0a22137
+iv: b309c63e1eefe707c43d776df8fad429
+
+first line: 
+key: None
+iv: None
+
+first line: Plutorun started on Tue Dec 3 12:14:59 CET 2019
+key: 85bcaa86b60488739b8fa59724e0c8da6fd93ebd51c3eb73989a910c2aad0ff3
+iv: d1c3b8cff1f3ba27eb00d97bffca0c74
+
+first line: 
+key: 85bcaa86b60488739b8fa59724e0c8da6fd93ebd51c3eb73989a910c2aad0ff3
+iv: d1c3b8cff1f3ba27eb00d97bffca0c74
+
+first line: 18)
+key: None
+iv: d4d609d991cacb6e79a008f660e557ba
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+first line: Plutorun started on Tue Dec 3 12:15:15 CET 2019
+key: 4cb261dd293616951cf58c17d9b5ef1e19bb95d3e5b4f964703ed708bc25ddfb
+iv: 4e331bcaa452fb39a5487cdebe62cf81
+
+first line: 
+key: 4cb261dd293616951cf58c17d9b5ef1e19bb95d3e5b4f964703ed708bc25ddfb
+iv: 4e331bcaa452fb39a5487cdebe62cf81
+
+first line: 
+key: None
+iv: None
+
+first line: Plutorun started on Tue Dec 3 12:16:19 CET 2019
+key: 6e21bc35802485cf709c09f57ee07337919821172a817dd4cfd545434f9bcc76
+iv: 18c09ff04e750307fa8895bebf096111
+
+first line: 
+key: 6e21bc35802485cf709c09f57ee07337919821172a817dd4cfd545434f9bcc76
+iv: 18c09ff04e750307fa8895bebf096111
+
+first line: 
+key: None
+iv: None
+
+first line: Plutorun started on Tue Dec 3 12:16:52 CET 2019
+key: dff57397ff302e94c2993f2a8a5bf40699e9f5ac44b6e02a6b656fcbdb1a5636
+iv: a80794a708535ecba532d3d8a461b332
+
+first line: |
+key: dff57397ff302e94c2993f2a8a5bf40699e9f5ac44b6e02a6b656fcbdb1a5636
+iv: 5fbdddfbe4c17348ee1995dd59bd6197
+
+first line: essage ID:  00 41 8b 56
+key: None
+iv: f171852f023e5821370af76b8419b41e
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+first line: Plutorun started on Tue Dec 3 12:17:27 CET 2019
+key: 4140ed3718e64cfe02315b4befb068d346f86378d2291a523cdec04448b60bca
+iv: 6ab0b91f25adf1829ebd640c430bc743
+
+first line: 
+key: 4140ed3718e64cfe02315b4befb068d346f86378d2291a523cdec04448b60bca
+iv: 6ab0b91f25adf1829ebd640c430bc743
+
+first line: 
+key: None
+iv: None
+
+first line: Plutorun started on Tue Dec 3 12:17:59 CET 2019
+key: 18af7d0ac3cb4c60efba39099f5ef05f411116d3e1220b95f86b5dd6887c5c08
+iv: f862616f9c8d3929c03cdba9f1d518c9
+
+first line: 
+key: 18af7d0ac3cb4c60efba39099f5ef05f411116d3e1220b95f86b5dd6887c5c08
+iv: f862616f9c8d3929c03cdba9f1d518c9
+
+first line: | *received 76 bytes from 10.0.2.15:500 on enp0s3 (port=500) at 2019-12-03 12:18:19
+key: None
+iv: 6fc3a15f803d8755f5fd054da12d5915
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+first line: Plutorun started on Tue Dec 3 12:19:07 CET 2019
+key: None
+iv: None
+
+TypeError: 'NoneType' object has no attribute '__getitem__'
+first line: Plutorun started on Tue Dec 3 12:19:24 CET 2019
+key: 95b5532c32f587d7a2b9fd26a30f50607afe525bd1de0ff204f9052061bc938e
+iv: e85df0499dd636aadfa385cbbeae44df
+AttributeError: 'NoneType' object has no attribute 'next_payload'
+
+first line: Plutorun started on Tue Dec 3 12:19:24 CET 2019
+key: 95b5532c32f587d7a2b9fd26a30f50607afe525bd1de0ff204f9052061bc938e
+iv: 66c251875a62ecb0c49e43a9a1376241
+
+first line: |
+key: 95b5532c32f587d7a2b9fd26a30f50607afe525bd1de0ff204f9052061bc938e
+iv: f27706297a614f3545f216c559fd270b
+
+first line: 
+key: None
+iv: None
+
+first line: Plutorun started on Tue Dec 3 12:20:49 CET 2019
+key: 55d827f310e61b784c6065f4f255c977aebf36543c1d659ceb9631ab3b94d9c4
+iv: 4203758e76f440a69d1164904196abbd
+
+first line: 
+key: 55d827f310e61b784c6065f4f255c977aebf36543c1d659ceb9631ab3b94d9c4
+iv: 4203758e76f440a69d1164904196abbd
+
+first line: LUTO_PEER_ID='10.0.2.15' PLUTO_PEER_CLIENT='10.0.2.15/32' PLUTO_PEER_CLIENT_NET='10.0.2.15' PLUTO_PEER_CLIENT_MASK='255.255.255.255' PLUTO_PEER_PORT='0' PLUTO_PEER_PROTOCOL='0' PLUTO_PEER_CA='' PLUTO_STACK='netkey'   PLUTO_CONN_POLICY='PSK+ENCRYPT+TUNNEL+PFS+UP+IKEv2ALLOW+SAREFTRACK' PLUTO_CONN_ADDRFAMILY='ipv4' PLUTO_CONN_CLIENTFAMILY='ipv6' PLUTO_CONN_ENDFAMILY='ipv4' PLUTO_XAUTH_USERNAME=''  PLUTO_IS_PEER_CISCO='0' PLUTO_CISCO_DNS_INFO='' PLUTO_CISCO_DOMAIN_INFO='' PLUTO_PEER_BANNER='' PLUTO_NM_CONFIGURED='0' ipsec _updown
+key: None
+iv: cd051563bd0af96b3bf6c65e6bec4f68
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+first line: Plutorun started on Tue Dec 3 12:21:54 CET 2019
+key: None
+iv: None
+TypeError: 'NoneType' object has no attribute '__getitem__'
+first line: Plutorun started on Tue Dec 3 12:21:54 CET 2019
+key: c865b9d88fed5b0de160d14225082796e89df471d32dcb81b36995cec092f585
+iv: ee31db0396c1a016648de9b9b716dedc
+
+first line: |
+key: c865b9d88fed5b0de160d14225082796e89df471d32dcb81b36995cec092f585
+iv: ee31db0396c1a016648de9b9b716dedc
+
+first line: 
+key: None
+iv: None
+
+first line: Plutorun started on Tue Dec 3 12:23:17 CET 2019
+key: 0ab8584cf841ba8d729fe1eeea0d37e0b216592a1ce78fa716e7af4bded865da
+iv: e68dae451dd81d96426b8e97a0d46e62
+
+first line: 
+key: 0ab8584cf841ba8d729fe1eeea0d37e0b216592a1ce78fa716e7af4bded865da
+iv: e68dae451dd81d96426b8e97a0d46e62
+
+first line: 
+key: None
+iv: None
+
+first line: Plutorun started on Tue Dec 3 12:24:08 CET 2019
+key: 4601cf5c596b50b3a56fd456de45ab590fcd4d0ebc5071f102b77370204eb217
+iv: 4a41f7498577005176bc2d7919d9b5b4
+AttributeError: 'NoneType' object has no attribute 'next_payload'
+
+first line: Plutorun started on Tue Dec 3 12:24:24 CET 2019
+key: bfe57da349f3e1efdca385c4dfb872f8dc30475455487c4fd3e4bc20613a6467
+iv: c2124781963d936a8c786ffea50740a1
+
+first line: |
+key: bfe57da349f3e1efdca385c4dfb872f8dc30475455487c4fd3e4bc20613a6467
+iv: c2124781963d936a8c786ffea50740a1
+
+first line: 
+key: None
+iv: None
+
+first line: Plutorun started on Tue Dec 3 12:24:57 CET 2019
+key: None
+iv: None
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+first line: Plutorun started on Tue Dec 3 12:24:57 CET 2019
+key: a37c5350ab56976f6e69e637fb4abb23bf9378dcd9762c2d6d06dbd47fa0c806
+iv: 3537ba2d43f9798df69a5828a3be8517
+
+first line: |
+key: a37c5350ab56976f6e69e637fb4abb23bf9378dcd9762c2d6d06dbd47fa0c806
+iv: 0245a4a14641266ed17cc0fe6c8d7a01
+    raise AttributeError(attr)
+AttributeError: vendorID
+
+first line: Plutorun started on Tue Dec 3 12:25:30 CET 2019
+key: 654ccba8494d84f8be2bdab0c40fb76be7a424cc77b889a531475c4c65b83488
+iv: 46feaad139638411f3fd43da19178b0a
+
+first line: 
+key: 654ccba8494d84f8be2bdab0c40fb76be7a424cc77b889a531475c4c65b83488
+iv: 46feaad139638411f3fd43da19178b0a
+
+first line: ify through enp0s3:500 to 10.0.2.15:500 (using #1)
+key: None
+iv: None
+
+first line: Plutorun started on Tue Dec 3 12:26:36 CET 2019
+key: f2576f9a43352edc0b8b3a9599d0cbde4148a009d7ef8c3cfe76376b0c636e53
+iv: 2561648679db909880382cb29fc604d9
+
+first line: 
+key: f2576f9a43352edc0b8b3a9599d0cbde4148a009d7ef8c3cfe76376b0c636e53
+iv: 2561648679db909880382cb29fc604d9
+
+first line: 
+key: None
+iv: None
+
+first line: Plutorun started on Tue Dec 3 12:27:10 CET 2019
+key: 843aafb16e800ecfc965c0417a04f79936ea995ae573c5e3826cf0af773077b9
+iv: 480a6a08a619b75eb6d650788f28b71d
+
+first line: |
+key: 843aafb16e800ecfc965c0417a04f79936ea995ae573c5e3826cf0af773077b9
+iv: 31984788f683672eb2e06d945f3b5674
+
+first line: 
+key: None
+iv: None
+
+first line: Plutorun started on Tue Dec 3 12:28:00 CET 2019
+key: None
+iv: None
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+first line: Plutorun started on Tue Dec 3 12:28:00 CET 2019
+key: ebc77b89ffb355a351a95db384eb60acbe44e6e21342f6f477db19eb7e1ce347
+iv: 68c0798990924084dba01a48685149c9
+AttributeError: 'NoneType' object has no attribute 'next_payload'
+
+first line: Plutorun started on Tue Dec 3 12:28:34 CET 2019
+key: fd198d6497e0ecc7576364400fa6e38225581148af779c7ad101067ad17f3aec
+iv: ef4ce76cd750aadbfa5721c1a9729cc0
+
+first line: 
+key: fd198d6497e0ecc7576364400fa6e38225581148af779c7ad101067ad17f3aec
+iv: ef4ce76cd750aadbfa5721c1a9729cc0
+
+first line: 
+key: None
+iv: None

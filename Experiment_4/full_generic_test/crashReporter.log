@@ -1,0 +1,30 @@
+[INFO]      2020 03 03 09:11:28 crashreporter v0.1 started
+[INFO]      2020 03 03 09:11:54 At least one new PID was found
+[INFO]      2020 03 03 09:11:54 
+			( 3285, pluto, 2020-03-03 09:11:51)
+			( 3289, pluto, 2020-03-03 09:11:51)
+			( 3290, pluto, 2020-03-03 09:11:51)
+
+[ERROR]     2020 03 03 09:58:22 Detected crash of: pluto I Will safeguard the logfile.
+[INFO]      2020 03 03 09:58:22 logfile copied
+[ERROR]     2020 03 03 09:58:22 At least one old PID disapeared
+[INFO]      2020 03 03 09:58:22 
+			( 3285, pluto, 2020-03-03 09:11:51)
+			( 3289, pluto, 2020-03-03 09:11:51)
+			( 3290, pluto, 2020-03-03 09:11:51)
+
+[INFO]      2020 03 03 09:58:32 At least one new PID was found
+[INFO]      2020 03 03 09:58:32 
+			( 5657, pluto, 2020-03-03 09:58:29)
+			( 5659, pluto, 2020-03-03 09:58:29)
+			( 5660, pluto, 2020-03-03 09:58:29)
+
+[ERROR]     2020 03 03 10:01:28 Detected crash of: pluto I Will safeguard the logfile.
+[INFO]      2020 03 03 10:01:28 logfile copied
+[ERROR]     2020 03 03 10:01:28 At least one old PID disapeared
+[INFO]      2020 03 03 10:01:28 
+			( 5657, pluto, 2020-03-03 09:58:29)
+			( 5659, pluto, 2020-03-03 09:58:29)
+			( 5660, pluto, 2020-03-03 09:58:29)
+
+[INFO]      2020 03 03 10:01:31 crashreporter v0.1 exit

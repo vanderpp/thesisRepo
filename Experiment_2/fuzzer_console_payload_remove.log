@@ -1,0 +1,1775 @@
+root@fuzzer:/media/sf_Pluto_shared/FrameWork_secfuzz_deployable_24/src# python ike_fuzzer-v0.2.py -i 10.0.2.15 --local-mac 08:00:27:14:91:0f --sut-mac 08:00:27:61:c0:54 --log /media/sf_Pluto_shared/Secfuzz_log_20191210_8.txt -e enp0s3 --p /media/sf_Pluto_shared/pluto.log --fuzz-mode
+-i 10.0.2.15
+--local-mac 08:00:27:14:91:0f
+--sut-mac 08:00:27:61:c0:54
+--log /media/sf_Pluto_shared/Secfuzz_log_20191210_8.txt
+-e enp0s3
+--pluto-log /media/sf_Pluto_shared/pluto.log
+--fuzz-mode 
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+[DEBUG INFO] total No of Payloads: 4
+[DEBUG INFO] removing payload No:  4
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:05:35 CET 2019
+key: 7cc5803b5ff7c588e9fd4d44f6b1698d
+iv: cb5a7ab149c2aa1c204661e982726e72
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1316
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 2
+[DEBUG INFO] cannot remove payload
+ISAKMP(resp_cookie='t4A\xac\x02\xf0\xc7\xa1', next_payload=8, exch_type=32, length=60, version=16, flags=1, init_cookie='Y\xd6/\x9d>)\xf0\xdf', id=2316754021)/ISAKMP_payload_Hash(load='\xca\xaa@\x1d\xe4\xfcAa&h\xda\x15\x8c\xdc9\xefg\x17\xa8\xd1', res=0, length=24, next_payload=0)/Raw(load='\x00\x00\x00\x00\x00\x00\x00\x00')
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:05:35 CET 2019
+key: 7cc5803b5ff7c588e9fd4d44f6b1698d
+iv: cb5a7ab149c2aa1c204661e982726e72
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1316
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:05:58 CET 2019
+key: 563c3b542b38659b80c23e0298a200a8
+iv: cd593f5e53f859c863b9702a74c2f01e
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1021
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 5
+[DEBUG INFO] removing payload No:  5
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:05:58 CET 2019
+key: 563c3b542b38659b80c23e0298a200a8
+iv: cd593f5e53f859c863b9702a74c2f01e
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1021
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:06:21 CET 2019
+key: 4280cbc8160ec2395a1a75829763172f
+iv: f420e2a216eb899c91e74b4c387529f9
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1417
+DECRYPTION FAILED!
+[DEBUG INFO] total No of Payloads: 2
+[DEBUG INFO] cannot remove payload
+ISAKMP(resp_cookie='\x0e\x16\xba\xe5\xa9@n\xa3', next_payload=6, exch_type=5, length=76, version=16, flags=1, init_cookie='\xd1t\xeb\\mY\xa7\x9b', id=2701524699)/ISAKMP_payload(next_payload=0)
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:06:21 CET 2019
+key: 4280cbc8160ec2395a1a75829763172f
+iv: f420e2a216eb899c91e74b4c387529f9
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1417
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:06:34 CET 2019
+key: c66176d22afb17bbf3eff102ccad0e2b
+iv: bfb3826debaaf26fe6fbd3a1d40150da
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1266
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 2
+[DEBUG INFO] cannot remove payload
+ISAKMP(resp_cookie='u\x9b\x9cY\xc3\xfc\xda0', next_payload=8, exch_type=32, length=60, version=16, flags=1, init_cookie='g\xef\x1a\xb4\x83P\xeb\x99', id=1699656157)/ISAKMP_payload_Hash(load='{5\xc6\xa1\x86~\xb0c\x177\x81"\x12"\x1f\xb6\xa9F\x1e\xe6', res=0, length=24, next_payload=0)/Raw(load='\x00\x00\x00\x00\x00\x00\x00\x00')
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:06:34 CET 2019
+key: c66176d22afb17bbf3eff102ccad0e2b
+iv: bfb3826debaaf26fe6fbd3a1d40150da
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1266
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:06:48 CET 2019
+key: c16cb204ad7d45afbac5cd72d93f11e8
+iv: 04202bcdc0408fbe91621c56c20e12d7
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1266
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 2
+[DEBUG INFO] cannot remove payload
+ISAKMP(resp_cookie='\x0ch\xb2\xaf\x81\xb5\xe3\x05', next_payload=8, exch_type=32, length=60, version=16, flags=1, init_cookie='\xfd5\xca\x1cg\xf8d\x99', id=3007706285)/ISAKMP_payload_Hash(load='\\ys\tp\x0c\xbb\xb7\xa6\xa0\xf8{U.\xdf\xb1\xf2\x915\xe4', res=0, length=24, next_payload=0)/Raw(load='\x00\x00\x00\x00\x00\x00\x00\x00')
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:06:48 CET 2019
+key: c16cb204ad7d45afbac5cd72d93f11e8
+iv: 04202bcdc0408fbe91621c56c20e12d7
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1266
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:07:01 CET 2019
+key: 6cc950aa0d8185672a9b25b10b51886c
+iv: 3a86d612722050250d52205869b1e035
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1312
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 2
+[DEBUG INFO] cannot remove payload
+ISAKMP(resp_cookie='bX\x04\xccP\xb2\xc0 ', next_payload=8, exch_type=32, length=60, version=16, flags=1, init_cookie='\x1c\xe7m\xc6\x8c$\xcf\x86', id=2237685114)/ISAKMP_payload_Hash(load='L\x80 \x1e\xd91G+h-\x7f\x18L}\x1e\xd0S\x12\xe0d', res=0, length=24, next_payload=0)/Raw(load='\x00\x00\x00\x00\x00\x00\x00\x00')
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:07:01 CET 2019
+key: 6cc950aa0d8185672a9b25b10b51886c
+iv: 3a86d612722050250d52205869b1e035
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1312
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:07:15 CET 2019
+key: 79f6147589f9d51f5b9ac20305efce83
+iv: 1981cc392c82bac31d7f11b948fcb3e4
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1266
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 2
+[DEBUG INFO] cannot remove payload
+ISAKMP(resp_cookie='\xbe\xc8\x97\x8bxt\x85\xfb', next_payload=8, exch_type=32, length=60, version=16, flags=1, init_cookie='\xe1TF\x8fa\xc2\x9dE', id=1367222877)/ISAKMP_payload_Hash(load='\xa2A\xc4\xd6w&F\x81\xef7\x15\x1d\x95\xe5\xb8\x14mn\xcd=', res=0, length=24, next_payload=0)/Raw(load='\x00\x00\x00\x00\x00\x00\x00\x00')
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:07:15 CET 2019
+key: 79f6147589f9d51f5b9ac20305efce83
+iv: 1981cc392c82bac31d7f11b948fcb3e4
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1266
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:07:28 CET 2019
+key: 838e72f82d9d24f87ab66733a9562a37
+iv: 48a4289851e48781cd4644a6daa1095a
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1312
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 2
+[DEBUG INFO] cannot remove payload
+ISAKMP(resp_cookie='BJ\xa0H\xc4\x14\xa0\x8e', next_payload=8, exch_type=32, length=60, version=16, flags=1, init_cookie='>\x07VQ\x8e\x13=\xe2', id=683653006)/ISAKMP_payload_Hash(load='\xed\x17vFm]\x9bhDJ\xd2\x10\x1b.\x9a\xc8\xf2\xca{\xda', res=0, length=24, next_payload=0)/Raw(load='\x00\x00\x00\x00\x00\x00\x00\x00')
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:07:28 CET 2019
+key: 838e72f82d9d24f87ab66733a9562a37
+iv: 48a4289851e48781cd4644a6daa1095a
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1312
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:07:42 CET 2019
+key: 3e02327cba569db1405f212b6b3b9c5f
+iv: 327dbf24ac09de15d6056fefc34d3dc7
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1266
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 2
+[DEBUG INFO] cannot remove payload
+ISAKMP(resp_cookie='@\xb8\xba\xfd\xde\xe8\xf5\xe1', next_payload=8, exch_type=32, length=60, version=16, flags=1, init_cookie='\x94\x99\xee\x92va\xa7+', id=3631165706)/ISAKMP_payload_Hash(load='\xa7D\xf0)\xde$\xb1\x86\x07\xd7\xa2M\x96\x91\x7f\xa3\xb6\xd7\x94\xea', res=0, length=24, next_payload=0)/Raw(load='\x00\x00\x00\x00\x00\x00\x00\x00')
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:07:42 CET 2019
+key: 3e02327cba569db1405f212b6b3b9c5f
+iv: 327dbf24ac09de15d6056fefc34d3dc7
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1266
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:07:55 CET 2019
+key: 418e28b6700c6149196a556bf1c14fe3
+iv: 2ac388f3ac3bfa3df240d7ae58715c41
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 730
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 3
+[DEBUG INFO] removing payload No:  3
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:07:55 CET 2019
+key: 418e28b6700c6149196a556bf1c14fe3
+iv: 2ac388f3ac3bfa3df240d7ae58715c41
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 730
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:08:18 CET 2019
+key: 45b1731bb67b1197efda2ab7e6754660
+iv: c01bd07b7d1e3acf69674ac5f6cd9206
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1312
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 2
+[DEBUG INFO] cannot remove payload
+ISAKMP(resp_cookie='{\x06\xfd\x81\xf0S,w', next_payload=8, exch_type=32, length=60, version=16, flags=1, init_cookie='\x91(5kk\xe4\xe6w', id=71084592)/ISAKMP_payload_Hash(load='\xe1#\x04\x80dQ\xa2\xa9\xb1\x95\xc7:\xa4i\xce\xab\xfe\x04[\x14', res=0, length=24, next_payload=0)/Raw(load='\x00\x00\x00\x00\x00\x00\x00\x00')
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:08:18 CET 2019
+key: 45b1731bb67b1197efda2ab7e6754660
+iv: c01bd07b7d1e3acf69674ac5f6cd9206
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1312
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:08:31 CET 2019
+key: 444568e608c425965f2ac5277c425cb0
+iv: 79f0eb947f75ef52b120967d346da25b
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1021
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 5
+[DEBUG INFO] removing payload No:  4
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:08:31 CET 2019
+key: 444568e608c425965f2ac5277c425cb0
+iv: 79f0eb947f75ef52b120967d346da25b
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1021
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:08:54 CET 2019
+key: 069700dc2098dfeffddc77fb220249cf
+iv: 42d903ee16e1e1db0541cdc2af6f9c67
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1555
+DECRYPTION FAILED!
+[DEBUG INFO] total No of Payloads: 2
+[DEBUG INFO] cannot remove payload
+ISAKMP(resp_cookie='\x16\xea\xc17!\xd3L\x1d', next_payload=6, exch_type=5, length=76, version=16, flags=1, init_cookie='\xb2\x10\xe0\x08\xd78\xf7\xab', id=71642316)/ISAKMP_payload(next_payload=0)
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:08:54 CET 2019
+key: 069700dc2098dfeffddc77fb220249cf
+iv: 42d903ee16e1e1db0541cdc2af6f9c67
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1555
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:09:07 CET 2019
+key: acc0a025b70e0dfa65151e7c8a769d4d
+iv: d41b7a2a2ae559cf72da35a9eab84934
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1021
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 5
+[DEBUG INFO] removing payload No:  5
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:09:07 CET 2019
+key: acc0a025b70e0dfa65151e7c8a769d4d
+iv: d41b7a2a2ae559cf72da35a9eab84934
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1021
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:09:30 CET 2019
+key: fcccc5422bb09f360c79c9fc5fbe3af8
+iv: 0ffee50fd326aa150140977bfad2b01d
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1601
+DECRYPTION FAILED!
+[DEBUG INFO] total No of Payloads: 2
+[DEBUG INFO] cannot remove payload
+ISAKMP(resp_cookie='\xc0\x99K\x8e\x8b\xb5X\xb9', next_payload=6, exch_type=5, length=76, version=16, flags=1, init_cookie='\x9d6\xc6^\x03\x9b) ', id=3568274513)/ISAKMP_payload(next_payload=0)
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:09:30 CET 2019
+key: fcccc5422bb09f360c79c9fc5fbe3af8
+iv: 0ffee50fd326aa150140977bfad2b01d
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1601
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:09:44 CET 2019
+key: 9f3ec42152405235af33a816573ce799
+iv: 8144a6e5125dda76602187d44405c476
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1021
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 5
+[DEBUG INFO] removing payload No:  3
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:09:44 CET 2019
+key: 9f3ec42152405235af33a816573ce799
+iv: 8144a6e5125dda76602187d44405c476
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1021
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:10:06 CET 2019
+key: 03d3590095820cd7f697fe5359beb46b
+iv: d6357fad7fe535a6ff019673c637cf6e
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1555
+DECRYPTION FAILED!
+[DEBUG INFO] total No of Payloads: 2
+[DEBUG INFO] cannot remove payload
+ISAKMP(resp_cookie='\xc8m\xff\xe8):\xb68', next_payload=6, exch_type=5, length=76, version=16, flags=1, init_cookie='\xc6\x1btfw7\x0f\xa9', id=3811721029)/ISAKMP_payload(next_payload=0)
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:10:06 CET 2019
+key: 03d3590095820cd7f697fe5359beb46b
+iv: d6357fad7fe535a6ff019673c637cf6e
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1555
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:10:20 CET 2019
+key: 1ef14719cc02974899e9692c4a25c738
+iv: dc5470fb8b0f40ee7872eb9721b625b0
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1266
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 2
+[DEBUG INFO] cannot remove payload
+ISAKMP(resp_cookie='y{/\x92\x82\x93\x954', next_payload=8, exch_type=32, length=60, version=16, flags=1, init_cookie='\x9eh\xfb\xb6\xe7Wmi', id=658599162)/ISAKMP_payload_Hash(load='U\xb6\x03\xf1\xfdAs\x9ckG\x84\xda\x10`\xc6\x1b4\ry\xb2', res=0, length=24, next_payload=0)/Raw(load='\x00\x00\x00\x00\x00\x00\x00\x00')
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:10:20 CET 2019
+key: 1ef14719cc02974899e9692c4a25c738
+iv: dc5470fb8b0f40ee7872eb9721b625b0
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1266
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:10:33 CET 2019
+key: 3dc21ea4c4ca37f67aab2c0167c2a40f
+iv: ac6f631e54091b84e4d675f2c2519592
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1555
+DECRYPTION FAILED!
+[DEBUG INFO] total No of Payloads: 2
+[DEBUG INFO] cannot remove payload
+ISAKMP(resp_cookie='!\x1cE\xdf\xc1\x05\x0b\x96', next_payload=6, exch_type=5, length=76, version=16, flags=1, init_cookie='o\x13\xf6\x1b\xcb\x07\x8f\x0f', id=2341927856)/ISAKMP_payload(next_payload=0)
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:10:33 CET 2019
+key: 3dc21ea4c4ca37f67aab2c0167c2a40f
+iv: ac6f631e54091b84e4d675f2c2519592
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1555
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:10:47 CET 2019
+key: 3f6b31866d6608fc8359af695a4b7541
+iv: a32212beabfb0c4f9afc0e03a5c3555c
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 975
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 5
+[DEBUG INFO] removing payload No:  4
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:10:47 CET 2019
+key: 3f6b31866d6608fc8359af695a4b7541
+iv: a32212beabfb0c4f9afc0e03a5c3555c
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 975
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:11:10 CET 2019
+key: 06a253e4c8e7687fcb7e615612fcc596
+iv: 9689891eac782ef944ee0013f7ccb6d8
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1417
+DECRYPTION FAILED!
+[DEBUG INFO] total No of Payloads: 2
+[DEBUG INFO] cannot remove payload
+ISAKMP(resp_cookie='\xb0q\x19\x0b[\xc4$o', next_payload=6, exch_type=5, length=76, version=16, flags=1, init_cookie='\x95\x1f\xca\xba0_r\x13', id=8656720)/ISAKMP_payload(next_payload=0)
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:11:10 CET 2019
+key: 06a253e4c8e7687fcb7e615612fcc596
+iv: 9689891eac782ef944ee0013f7ccb6d8
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1417
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:11:23 CET 2019
+key: 56e6abb12c06d3fa83a2496558c9824e
+iv: 4e76ba6fe18d33834fef0b2d1a416a00
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 730
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 3
+[DEBUG INFO] removing payload No:  3
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:11:23 CET 2019
+key: 56e6abb12c06d3fa83a2496558c9824e
+iv: 4e76ba6fe18d33834fef0b2d1a416a00
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 730
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:11:46 CET 2019
+key: 1cea47f767eda0a9fc3a7ada29874413
+iv: 26288f0320fd5c3ead0f146fa1a43bb7
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1067
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 5
+[DEBUG INFO] removing payload No:  4
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:11:46 CET 2019
+key: 1cea47f767eda0a9fc3a7ada29874413
+iv: 26288f0320fd5c3ead0f146fa1a43bb7
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1067
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:12:08 CET 2019
+key: 623f36bbe0b57b0781534d7e64bf405e
+iv: 9c8b61757b74a25145177d85df5169a2
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1021
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 5
+[DEBUG INFO] removing payload No:  5
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:12:08 CET 2019
+key: 623f36bbe0b57b0781534d7e64bf405e
+iv: 9c8b61757b74a25145177d85df5169a2
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1021
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:12:31 CET 2019
+key: 8830f84d5c8dfff1aebf9bd1d8d4ed5c
+iv: a0f396fa5765ebf45c6f33520d1f31b1
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 975
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 5
+[DEBUG INFO] removing payload No:  5
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:12:31 CET 2019
+key: 8830f84d5c8dfff1aebf9bd1d8d4ed5c
+iv: a0f396fa5765ebf45c6f33520d1f31b1
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 975
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:12:53 CET 2019
+key: 11caab9cf50bc590567a7a605cf8b4d7
+iv: 49ba4045475b3afde331c793d3c5d5d2
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1404
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 2
+[DEBUG INFO] cannot remove payload
+ISAKMP(resp_cookie='\xeb6<8API\xf5', next_payload=8, exch_type=32, length=60, version=16, flags=1, init_cookie='\xed\xa8h\xd2\xa3I\x8a\x19', id=2854975502)/ISAKMP_payload_Hash(load='\x0f\xe2\xba[\x90BB\x9a\x82\xe5\xb7\x15Q\x96\\\xa7\x1b\xa44G', res=0, length=24, next_payload=0)/Raw(load='\x00\x00\x00\x00\x00\x00\x00\x00')
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:12:53 CET 2019
+key: 11caab9cf50bc590567a7a605cf8b4d7
+iv: 49ba4045475b3afde331c793d3c5d5d2
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1404
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:13:07 CET 2019
+key: 6c3708c4d7f7836cd42bfa15c02e0a30
+iv: 56ed72064fba77403dd44cda855eb5d8
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1404
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 2
+[DEBUG INFO] cannot remove payload
+ISAKMP(resp_cookie='\x7f\xf0\xe3\xd4z\x11\xdd\x82', next_payload=8, exch_type=32, length=60, version=16, flags=1, init_cookie='Rqr\xc6@]\xefB', id=3842863006)/ISAKMP_payload_Hash(load='\xad\x9a2\xb7~u\xe2\x96\x8a\xbd\xcb<@\x98OS\xf6\x1d\xd5\xfb', res=0, length=24, next_payload=0)/Raw(load='\x00\x00\x00\x00\x00\x00\x00\x00')
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:13:07 CET 2019
+key: 6c3708c4d7f7836cd42bfa15c02e0a30
+iv: 56ed72064fba77403dd44cda855eb5d8
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1404
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:13:20 CET 2019
+key: 710a549a563225d28252fefb6b6b8d61
+iv: dd097f66c9d0eb8465a806ad691930e9
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 861
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 3
+[DEBUG INFO] removing payload No:  3
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:13:20 CET 2019
+key: 710a549a563225d28252fefb6b6b8d61
+iv: dd097f66c9d0eb8465a806ad691930e9
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 861
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:13:43 CET 2019
+key: 37b30169bcb938165ba8aa7e65814a74
+iv: ed392bcdfab043699e53ad01796fd635
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1312
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 2
+[DEBUG INFO] cannot remove payload
+ISAKMP(resp_cookie='\x03-\xad\xbd\xb8"7\xd9', next_payload=8, exch_type=32, length=60, version=16, flags=1, init_cookie='\xdc\x95Em\xc3L\xad\x83', id=4153171765)/ISAKMP_payload_Hash(load='z\xab\x9e\xcb@\x9d\xc7\x8c\x99A\x1dD\x1a\xbf\x14\xe3\xd0\xe7\xd7&', res=0, length=24, next_payload=0)/Raw(load='\x00\x00\x00\x00\x00\x00\x00\x00')
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:13:43 CET 2019
+key: 37b30169bcb938165ba8aa7e65814a74
+iv: ed392bcdfab043699e53ad01796fd635
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1312
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:13:56 CET 2019
+key: 906c9c38078b1f8a439978778990822e
+iv: 6667955037154161af757e80f7dec570
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1021
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 5
+[DEBUG INFO] removing payload No:  4
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:13:56 CET 2019
+key: 906c9c38078b1f8a439978778990822e
+iv: 6667955037154161af757e80f7dec570
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1021
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+2 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (payload/field/packet) = payload
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+[DEBUG INFO] (repeat/remove/insert): remove
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:14:19 CET 2019
+key: c4492951ac76dbe17bd703acf824093f
+iv: 27e9d4f26e488fefd31b3063b45cc210
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1067
+DECRYPTION SUCCESS!
+[DEBUG INFO] total No of Payloads: 5
+[DEBUG INFO] removing payload No:  5
+pluto log reader
+first line: Plutorun started on Tue Dec 10 15:14:19 CET 2019
+key: c4492951ac76dbe17bd703acf824093f
+iv: 27e9d4f26e488fefd31b3063b45cc210
+enc: <module 'Crypto.Cipher.AES' from '/usr/lib/python2.7/dist-packages/Crypto/Cipher/AES.pyc'>
+lines read: 1067
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+1 packet captured
+1 packet received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+.
+Sent 1 packets.
+^C0 packets captured
+0 packets received by filter
+0 packets dropped by kernel
+root@fuzzer:/media/sf_Pluto_shared/FrameWork_secfuzz_deployable_24/src# 
+

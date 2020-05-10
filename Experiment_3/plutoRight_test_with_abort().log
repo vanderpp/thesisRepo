@@ -1,0 +1,1411 @@
+Plutorun started on Tue Feb 4 10:52:26 CET 2020
+adjusting ipsec.d to /etc/ipsec.d
+Labelled IPsec not enabled; value 32001 ignored.
+Starting Pluto (Openswan Version 2.6.51.5; Vendor ID OSW~|tYiWYsW) pid:23749
+LEAK_DETECTIVE support [disabled]
+OCF support for IKE [disabled]
+SAref support [disabled]: Protocol not available
+SAbind support [disabled]: Protocol not available
+NSS support [disabled]
+HAVE_STATSD notification support not compiled in
+Setting NAT-Traversal port-4500 floating to off
+   port floating activation criteria nat_t=0/port_float=1
+   NAT-Traversal support  [disabled]
+| opening /dev/urandom
+using /dev/urandom as source of random entropy
+| inserting event EVENT_REINIT_SECRET, timeout in 3600 seconds (head of queue)
+| inserting event EVENT_PENDING_DDNS, timeout in 60 seconds (head of queue)
+| inserting event EVENT_PENDING_PHASE2, timeout in 120 seconds 
+| event added after event EVENT_PENDING_DDNS
+ike_alg_register_enc(): Activating OAKLEY_AES_CBC: Ok (ret=0)
+ike_alg_register_hash(): Activating OAKLEY_SHA2_512: Ok (ret=0)
+ike_alg_register_hash(): Activating OAKLEY_SHA2_256: Ok (ret=0)
+starting up 1 cryptographic helpers
+started helper pid=23753 (fd:7)
+Using Linux XFRM/NETKEY IPsec interface code on 5.3.0-28-generic
+| process 23749 listening for PF_KEY_V2 on file descriptor 10
+| finish_pfkey_msg: K_SADB_REGISTER message 1 for AH 
+|   02 07 00 02  02 00 00 00  01 00 00 00  c5 5c 00 00
+| pfkey_get: K_SADB_REGISTER message 1
+| AH registered with kernel.
+| finish_pfkey_msg: K_SADB_REGISTER message 2 for ESP 
+|   02 07 00 03  02 00 00 00  02 00 00 00  c5 5c 00 00
+| pfkey_get: K_SADB_REGISTER message 2
+| alg_init():memset(0x55c066d74540, 0, 2048) memset(0x55c066d74d40, 0, 2048) 
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: sadb_msg_len=22 sadb_supported_len=72
+| kernel_alg_add():satype=3, exttype=14, alg_id=251
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: alg[0], exttype=14, satype=3, alg_id=251, alg_ivlen=0, alg_minbits=0, alg_maxbits=0, res=0, ret=1
+| kernel_alg_add():satype=3, exttype=14, alg_id=2
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: alg[1], exttype=14, satype=3, alg_id=2, alg_ivlen=0, alg_minbits=128, alg_maxbits=128, res=0, ret=1
+| kernel_alg_add():satype=3, exttype=14, alg_id=3
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: alg[2], exttype=14, satype=3, alg_id=3, alg_ivlen=0, alg_minbits=160, alg_maxbits=160, res=0, ret=1
+| kernel_alg_add():satype=3, exttype=14, alg_id=5
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: alg[3], exttype=14, satype=3, alg_id=5, alg_ivlen=0, alg_minbits=256, alg_maxbits=256, res=0, ret=1
+| kernel_alg_add():satype=3, exttype=14, alg_id=6
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: alg[4], exttype=14, satype=3, alg_id=6, alg_ivlen=0, alg_minbits=384, alg_maxbits=384, res=0, ret=1
+| kernel_alg_add():satype=3, exttype=14, alg_id=7
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: alg[5], exttype=14, satype=3, alg_id=7, alg_ivlen=0, alg_minbits=512, alg_maxbits=512, res=0, ret=1
+| kernel_alg_add():satype=3, exttype=14, alg_id=8
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: alg[6], exttype=14, satype=3, alg_id=8, alg_ivlen=0, alg_minbits=160, alg_maxbits=160, res=0, ret=1
+| kernel_alg_add():satype=3, exttype=14, alg_id=9
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: alg[7], exttype=14, satype=3, alg_id=9, alg_ivlen=0, alg_minbits=128, alg_maxbits=128, res=0, ret=1
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: sadb_msg_len=22 sadb_supported_len=88
+| kernel_alg_add():satype=3, exttype=15, alg_id=11
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: alg[8], exttype=15, satype=3, alg_id=11, alg_ivlen=0, alg_minbits=0, alg_maxbits=0, res=0, ret=1
+| kernel_alg_add():satype=3, exttype=15, alg_id=2
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: alg[9], exttype=15, satype=3, alg_id=2, alg_ivlen=8, alg_minbits=64, alg_maxbits=64, res=0, ret=1
+| kernel_alg_add():satype=3, exttype=15, alg_id=3
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: alg[10], exttype=15, satype=3, alg_id=3, alg_ivlen=8, alg_minbits=192, alg_maxbits=192, res=0, ret=1
+| kernel_alg_add():satype=3, exttype=15, alg_id=6
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: alg[11], exttype=15, satype=3, alg_id=6, alg_ivlen=8, alg_minbits=40, alg_maxbits=128, res=0, ret=1
+| kernel_alg_add():satype=3, exttype=15, alg_id=7
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: alg[12], exttype=15, satype=3, alg_id=7, alg_ivlen=8, alg_minbits=40, alg_maxbits=448, res=0, ret=1
+| kernel_alg_add():satype=3, exttype=15, alg_id=12
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: alg[13], exttype=15, satype=3, alg_id=12, alg_ivlen=8, alg_minbits=128, alg_maxbits=256, res=0, ret=1
+| kernel_alg_add():satype=3, exttype=15, alg_id=252
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: alg[14], exttype=15, satype=3, alg_id=252, alg_ivlen=8, alg_minbits=128, alg_maxbits=256, res=0, ret=1
+| kernel_alg_add():satype=3, exttype=15, alg_id=22
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: alg[15], exttype=15, satype=3, alg_id=22, alg_ivlen=8, alg_minbits=128, alg_maxbits=256, res=0, ret=1
+| kernel_alg_add():satype=3, exttype=15, alg_id=253
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: alg[16], exttype=15, satype=3, alg_id=253, alg_ivlen=8, alg_minbits=128, alg_maxbits=256, res=0, ret=1
+| kernel_alg_add():satype=3, exttype=15, alg_id=13
+| kernel_alg_register_pfkey(): SADB_SATYPE_ESP: alg[17], exttype=15, satype=3, alg_id=13, alg_ivlen=8, alg_minbits=160, alg_maxbits=288, res=0, ret=1
+| kernel_alg_add():satype=3, exttype=15, alg_id=18
+| kernel_alg_add():satype=3, exttype=15, alg_id=19
+| kernel_alg_add():satype=3, exttype=15, alg_id=20
+| kernel_alg_add():satype=3, exttype=15, alg_id=14
+| kernel_alg_add():satype=3, exttype=15, alg_id=15
+| kernel_alg_add():satype=3, exttype=15, alg_id=16
+ike_alg_register_enc(): Activating aes_ccm_8: Ok (ret=0)
+ike_alg_add(): ERROR: algo_type '0', algo_id '0', Algorithm type already exists
+ike_alg_register_enc(): Activating aes_ccm_12: FAILED (ret=-17)
+ike_alg_add(): ERROR: algo_type '0', algo_id '0', Algorithm type already exists
+ike_alg_register_enc(): Activating aes_ccm_16: FAILED (ret=-17)
+ike_alg_add(): ERROR: algo_type '0', algo_id '0', Algorithm type already exists
+ike_alg_register_enc(): Activating aes_gcm_8: FAILED (ret=-17)
+ike_alg_add(): ERROR: algo_type '0', algo_id '0', Algorithm type already exists
+ike_alg_register_enc(): Activating aes_gcm_12: FAILED (ret=-17)
+ike_alg_add(): ERROR: algo_type '0', algo_id '0', Algorithm type already exists
+ike_alg_register_enc(): Activating aes_gcm_16: FAILED (ret=-17)
+| ESP registered with kernel.
+| finish_pfkey_msg: K_SADB_REGISTER message 3 for IPCOMP 
+|   02 07 00 09  02 00 00 00  03 00 00 00  c5 5c 00 00
+| pfkey_get: K_SADB_REGISTER message 3
+| IPCOMP registered with kernel.
+| Changed path to directory '/etc/ipsec.d/cacerts'
+| Changed path to directory '/etc/ipsec.d/aacerts'
+| Changed path to directory '/etc/ipsec.d/ocspcerts'
+| Found 0 items in directory '/etc/ipsec.d/crls'
+| inserting event EVENT_LOG_DAILY, timeout in 47254 seconds 
+| event added after event EVENT_REINIT_SECRET
+| next event EVENT_PENDING_DDNS in 60 seconds
+|  
+| *received whack message
+| alg_info_parse_str() ealg_buf=aes aalg_buf=sha1 eklen=128  aklen=0
+| enum_search_prefix () calling enum_search(0x55c066d50d60, "OAKLEY_AES")
+| enum_search_ppfixi () calling enum_search(0x55c066d50d60, "OAKLEY_AES_CBC")
+| parser_alg_info_add() ealg_getbyname("aes")=7
+| enum_search_prefix () calling enum_search(0x55c066d50cc0, "OAKLEY_SHA1")
+| parser_alg_info_add() aalg_getbyname("sha1")=2
+| __alg_info_ike_add() ealg=7 aalg=2 modp_id=5, cnt=1
+| __alg_info_ike_add() ealg=7 aalg=2 modp_id=2, cnt=2
+| Added new connection mytunnel with policy PSK+ENCRYPT+TUNNEL+PFS+IKEv2ALLOW+SAREFTRACK
+| from whack: got --esp=aes128-sha1
+| alg_info_parse_str() ealg_buf=aes aalg_buf=sha1 eklen=128  aklen=0
+| enum_search_prefix () calling enum_search(0x55c066d516e0, "ESP_AES")
+| parser_alg_info_add() ealg_getbyname("aes")=12
+| enum_search_prefix () calling enum_search(0x55c066d51100, "AUTH_ALGORITHM_HMAC_SHA1")
+| parser_alg_info_add() aalg_getbyname("sha1")=2
+| __alg_info_esp_add() ealg=12 aalg=2 cnt=1
+| esp string values: AES(12)_128-SHA1(2)_000; flags=-strict
+| ike (phase1) algorihtm values: AES_CBC(7)_128-SHA1(2)_000-MODP1536(5), AES_CBC(7)_128-SHA1(2)_000-MODP1024(2); flags=-strict
+| counting wild cards for 10.0.2.14 is 0
+| counting wild cards for 10.0.2.15 is 0
+| alg_info_addref() alg_info->ref_cnt=1
+| alg_info_addref() alg_info->ref_cnt=1
+| orient mytunnel matching on public/private keys: this=no[%address] that=no[%address]
+|   orient mytunnel finished with: 0 [none]
+| find_ID_host_pair: looking for me=10.0.2.14 him=10.0.2.15 (exact) 
+|   concluded with <none>
+adding connection: "mytunnel"
+| 10.0.2.14...10.0.2.15
+| ike_life: 3600s; ipsec_life: 28800s; rekey_margin: 540s; rekey_fuzz: 100%; keyingtries: 0; policy: PSK+ENCRYPT+TUNNEL+PFS+IKEv2ALLOW+SAREFTRACK
+| * processed 0 messages from cryptographic helpers 
+| next event EVENT_PENDING_DDNS in 60 seconds
+| next event EVENT_PENDING_DDNS in 60 seconds
+|  
+| *received whack message
+listening for IKE messages
+| found lo with address 127.0.0.1
+| found enp0s3 with address 10.0.2.15
+adding interface enp0s3/enp0s3 10.0.2.15:500 (AF_INET)
+adding interface lo/lo 127.0.0.1:500 (AF_INET)
+| found lo with address 0000:0000:0000:0000:0000:0000:0000:0001
+adding interface lo/lo ::1:500 (AF_INET6)
+| orient mytunnel checking against if: lo (AF_INET6:::1:500)
+| orient mytunnel checking against if: lo (AF_INET:127.0.0.1:500)
+| orient mytunnel checking against if: enp0s3 (AF_INET:10.0.2.15:500)
+|     orient matched on IP
+|   orient mytunnel finished with: 1 [10.0.2.15]
+| connection mytunnel is now oriented
+| find_host_pair: looking for me=10.0.2.15:500 %address him=10.0.2.14:500 exact-match 
+| find_host_pair: concluded with <none>
+| connect_to_host_pair: 10.0.2.15:500 %address 10.0.2.14:500 -> hp:none 
+| find_ID_host_pair: looking for me=10.0.2.15 him=10.0.2.14 (exact) 
+|                   comparing to me=10.0.2.14 him=10.0.2.15 (mytunnel) 
+|   concluded with <none>
+loading secrets from "/etc/ipsec.secrets"
+loaded private key for keyid: PPK_RSA:AQOlChmnw/3FE4 2DB9 84EF AAE6 F360 19A6 304E CF52 0810 9FA2
+| id type added to secret(0x55c0688e7150) PPK_PSK: 10.0.2.14
+| id type added to secret(0x55c0688e7150) PPK_PSK: 10.0.2.15
+| Processing PSK at line 16: passed
+| * processed 0 messages from cryptographic helpers 
+| next event EVENT_PENDING_DDNS in 60 seconds
+| next event EVENT_PENDING_DDNS in 60 seconds
+| opening /dev/urandom
+using /dev/urandom as source of random entropy
+! helper 0 waiting on fd: 8
+|  
+| *received whack message
+| kernel_alg_esp_enc_ok(12,0): alg_id=12, alg_ivlen=8, alg_minbits=128, alg_maxbits=256, res=0, ret=1
+| kernel_alg_esp_auth_keylen(auth=2, sadb_aalg=3): a_keylen=20
+| * processed 0 messages from cryptographic helpers 
+| next event EVENT_PENDING_DDNS in 46 seconds
+| next event EVENT_PENDING_DDNS in 46 seconds
+|  
+| *received 156 bytes from 10.0.2.14:500 on enp0s3 (port=500) at 2020-02-04 10:52:46
+|   48 5a f4 8d  d9 89 84 f8  00 00 00 00  00 00 00 00
+|   01 10 02 00  00 00 00 00  00 00 00 9c  0d 00 00 5c
+|   00 00 00 01  00 00 00 01  00 00 00 50  00 01 00 02
+|   03 00 00 24  00 01 00 00  80 0b 00 01  80 0c 0e 10
+|   80 01 00 07  80 02 00 02  80 03 00 01  80 04 00 05
+|   80 0e 00 80  00 00 00 24  01 01 00 00  80 0b 00 01
+|   80 0c 0e 10  80 01 00 07  80 02 00 02  80 03 00 01
+|   80 04 00 02  80 0e 00 80  0d 00 00 10  4f 53 57 7e
+|   7c 74 59 69  57 59 73 57  00 00 00 14  af ca d7 13
+|   68 a1 f1 c9  6b 86 96 fc  77 57 01 00
+| **parse ISAKMP Message:
+|    initiator cookie:
+|   48 5a f4 8d  d9 89 84 f8
+|    responder cookie:
+|   00 00 00 00  00 00 00 00
+|    ISAKMP version: ISAKMP Version 1.0 (rfc2407)
+|    exchange type: ISAKMP_XCHG_IDPROT
+|    flags: none
+|    message ID:  00 00 00 00
+|    length: 156
+|  processing version=1.0 packet with exchange type=ISAKMP_XCHG_IDPROT (2), msgid: 00000000
+| got payload 0x2(ISAKMP_NEXT_SA) needed: 0x2 opt: 0x2080
+| ***parse ISAKMP Security Association Payload:
+|    length: 92
+|    DOI: ISAKMP_DOI_IPSEC
+| got payload 0x2000(ISAKMP_NEXT_VID) needed: 0x0 opt: 0x2080
+| ***parse ISAKMP Vendor ID Payload:
+|    length: 16
+| got payload 0x2000(ISAKMP_NEXT_VID) needed: 0x0 opt: 0x2080
+| ***parse ISAKMP Vendor ID Payload:
+|    length: 20
+packet from 10.0.2.14:500: received Vendor ID payload [Openswan (this version) 2.6.51.5 ]
+packet from 10.0.2.14:500: received Vendor ID payload [Dead Peer Detection]
+| find_host_connection2 called from main_inI1_outR1, me=10.0.2.15:500 him=10.0.2.14:500 policy=/!IKEv1
+| find_host_pair: looking for me=10.0.2.15:500 %address him=10.0.2.14:500 any-match 
+| find_host_pair: comparing to me=10.0.2.15:500 %address him=10.0.2.14:500 
+| find_host_pair: concluded with mytunnel
+| found_host_pair_conn (find_host_connection2): 10.0.2.15:500 %address/10.0.2.14:500 -> hp:mytunnel 
+| searching for connection with policy = /!IKEv1
+| found policy = PSK+ENCRYPT+TUNNEL+PFS+IKEv2ALLOW+SAREFTRACK (mytunnel)
+| find_host_connection2 returns mytunnel (ike=none/none)
+| creating state object #1 at 0x55c0688e8140
+| processing connection mytunnel
+| ICOOKIE:  48 5a f4 8d  d9 89 84 f8
+| RCOOKIE:  74 b8 85 b0  9a a4 a0 0a
+| state hash entry 18
+| inserting state object #1 bucket: 18
+| inserting event EVENT_SO_DISCARD, timeout in 0 seconds for #1 (head of queue)
+"mytunnel" #1: responding to Main Mode
+| **emit ISAKMP Message:
+|    initiator cookie:
+|   48 5a f4 8d  d9 89 84 f8
+|    responder cookie:
+|   74 b8 85 b0  9a a4 a0 0a
+|    ISAKMP version: ISAKMP Version 1.0 (rfc2407)
+|    exchange type: ISAKMP_XCHG_IDPROT
+|    flags: none
+|    message ID:  00 00 00 00
+| ***emit ISAKMP Security Association Payload:
+|    DOI: ISAKMP_DOI_IPSEC
+| ****parse IPsec DOI SIT:
+|    IPsec DOI SIT: SIT_IDENTITY_ONLY
+| ****parse ISAKMP Proposal Payload:
+|    length: 80
+|    proposal number: 0
+|    protocol ID: PROTO_ISAKMP
+|    SPI size: 0
+|    number of transforms: 2
+| *****parse ISAKMP Transform Payload (ISAKMP):
+|    length: 36
+|    transform number: 0
+|    transform ID: KEY_IKE
+| ******parse ISAKMP Oakley attribute:
+|    af+type: OAKLEY_LIFE_TYPE
+|    length/value: 1
+|    [1 is OAKLEY_LIFE_SECONDS]
+| ******parse ISAKMP Oakley attribute:
+|    af+type: OAKLEY_LIFE_DURATION
+|    length/value: 3600
+| ******parse ISAKMP Oakley attribute:
+|    af+type: OAKLEY_ENCRYPTION_ALGORITHM
+|    length/value: 7
+|    [7 is OAKLEY_AES_CBC]
+| ike_alg_enc_ok(ealg=7,key_len=0): blocksize=16, keyminlen=128, keydeflen=128, keymaxlen=256, ret=1
+| ******parse ISAKMP Oakley attribute:
+|    af+type: OAKLEY_HASH_ALGORITHM
+|    length/value: 2
+|    [2 is OAKLEY_SHA1]
+| ******parse ISAKMP Oakley attribute:
+|    af+type: OAKLEY_AUTHENTICATION_METHOD
+|    length/value: 1
+|    [1 is OAKLEY_PRESHARED_KEY]
+| started looking for secret for 10.0.2.15->10.0.2.14 of kind PPK_PSK
+| actually looking for secret for 10.0.2.15->10.0.2.14 of kind PPK_PSK
+| line 16: key type PPK_PSK(10.0.2.15) to type PPK_PSK 
+| 1: compared key 10.0.2.15 to 10.0.2.15 / 10.0.2.14 -> 8
+| 2: compared key 10.0.2.14 to 10.0.2.15 / 10.0.2.14 -> 12
+| line 16: match=12 
+| best_match 0>12 line=16
+| line 1: key type PPK_PSK(10.0.2.15) to type PPK_RSA 
+| concluding with best_match=12 lineno=16
+| ******parse ISAKMP Oakley attribute:
+|    af+type: OAKLEY_GROUP_DESCRIPTION
+|    length/value: 5
+|    [5 is OAKLEY_GROUP_MODP1536]
+| ******parse ISAKMP Oakley attribute:
+|    af+type: OAKLEY_KEY_LENGTH
+|    length/value: 128
+| ike_alg_enc_ok(ealg=7,key_len=128): blocksize=16, keyminlen=128, keydeflen=128, keymaxlen=256, ret=1
+| Oakley Transform 0 accepted
+| ****emit IPsec DOI SIT:
+|    IPsec DOI SIT: SIT_IDENTITY_ONLY
+| ****emit ISAKMP Proposal Payload:
+|    proposal number: 0
+|    protocol ID: PROTO_ISAKMP
+|    SPI size: 0
+|    number of transforms: 1
+| *****emit ISAKMP Transform Payload (ISAKMP):
+|    transform number: 0
+|    transform ID: KEY_IKE
+| emitting 28 raw bytes of attributes into ISAKMP Transform Payload (ISAKMP)
+| attributes  80 0b 00 01  80 0c 0e 10  80 01 00 07  80 02 00 02
+| attributes  80 03 00 01  80 04 00 05  80 0e 00 80
+| emitting length of ISAKMP Transform Payload (ISAKMP): 36
+| emitting length of ISAKMP Proposal Payload: 44
+| emitting length of ISAKMP Security Association Payload: 56
+| ***emit ISAKMP Vendor ID Payload:
+| emitting 12 raw bytes of Vendor ID into ISAKMP Vendor ID Payload
+| Vendor ID  4f 53 57 7e  7c 74 59 69  57 59 73 57
+| emitting length of ISAKMP Vendor ID Payload: 16
+| out_vendorid(): sending [Dead Peer Detection]
+| ***emit ISAKMP Vendor ID Payload:
+| emitting 16 raw bytes of V_ID into ISAKMP Vendor ID Payload
+| V_ID  af ca d7 13  68 a1 f1 c9  6b 86 96 fc  77 57 01 00
+| emitting length of ISAKMP Vendor ID Payload: 20
+| sender checking NAT-T: 0 and 0
+| emitting length of ISAKMP Message: 120
+| peer supports dpd
+| complete state transition with STF_OK
+"mytunnel" #1: transition from state STATE_MAIN_R0 to state STATE_MAIN_R1
+| deleting event for #1
+| sending reply packet to 10.0.2.14:500 (from port 500)
+| sending 120 bytes for STATE_MAIN_R0 through enp0s3:500 to 10.0.2.14:500 (using #1)
+|   48 5a f4 8d  d9 89 84 f8  74 b8 85 b0  9a a4 a0 0a
+|   01 10 02 00  00 00 00 00  00 00 00 78  0d 00 00 38
+|   00 00 00 01  00 00 00 01  00 00 00 2c  00 01 00 01
+|   00 00 00 24  00 01 00 00  80 0b 00 01  80 0c 0e 10
+|   80 01 00 07  80 02 00 02  80 03 00 01  80 04 00 05
+|   80 0e 00 80  0d 00 00 10  4f 53 57 7e  7c 74 59 69
+|   57 59 73 57  00 00 00 14  af ca d7 13  68 a1 f1 c9
+|   6b 86 96 fc  77 57 01 00
+| inserting event EVENT_RETRANSMIT, timeout in 10 seconds for #1 (head of queue)
+"mytunnel" #1: STATE_MAIN_R1: sent MR1, expecting MI2
+| modecfg pull: noquirk policy:push not-client
+| phase 1 is done, looking for phase 2 to unpend
+| * processed 0 messages from cryptographic helpers 
+| next event EVENT_RETRANSMIT in 10 seconds for #1 (2020-02-04 10:52:46)
+| next event EVENT_RETRANSMIT in 10 seconds for #1 (2020-02-04 10:52:46)
+|  
+| *received 244 bytes from 10.0.2.14:500 on enp0s3 (port=500) at 2020-02-04 10:52:47
+|   48 5a f4 8d  d9 89 84 f8  74 b8 85 b0  9a a4 a0 0a
+|   04 10 02 00  00 00 00 00  00 00 00 f4  0a 00 00 c4
+|   34 9b e8 87  71 65 58 6d  2c 10 89 6e  7a ce 8f d7
+|   00 8b 60 d8  fd bf 5a 8b  c8 9f 84 3b  0e cc 0b 7a
+|   33 d2 2f ea  ce e2 80 ce  96 02 10 1a  46 b6 91 db
+|   70 39 9f 81  4e 41 f3 39  eb 43 e6 bf  af 0d d7 14
+|   5c a0 a6 c1  95 63 8e 19  a6 7e 18 75  7c 20 c2 4a
+|   f1 47 09 fa  77 52 dc 05  d9 65 e7 68  41 a1 85 23
+|   2d ba f9 29  82 35 d4 c7  e3 88 5f 6a  d1 27 a0 df
+|   14 57 98 43  05 0e 31 70  8d e4 9a a4  9a 6f 50 07
+|   30 3d da 84  6a ce 04 92  0a 5e ad 30  64 e6 8c 12
+|   f9 3c e7 6e  e0 f5 cb 8f  63 ee e4 09  f3 6a b3 c3
+|   d0 80 85 b6  ae 07 c8 1e  c1 0d 68 c7  21 d3 3b 2c
+|   b1 8e 15 ac  10 65 94 45  7d a9 24 ec  78 3f a7 db
+|   00 00 00 14  df b1 6a 0f  c4 68 a7 5a  99 85 a5 08
+|   68 d8 13 0a
+| **parse ISAKMP Message:
+|    initiator cookie:
+|   48 5a f4 8d  d9 89 84 f8
+|    responder cookie:
+|   74 b8 85 b0  9a a4 a0 0a
+|    ISAKMP version: ISAKMP Version 1.0 (rfc2407)
+|    exchange type: ISAKMP_XCHG_IDPROT
+|    flags: none
+|    message ID:  00 00 00 00
+|    length: 244
+|  processing version=1.0 packet with exchange type=ISAKMP_XCHG_IDPROT (2), msgid: 00000000
+| ICOOKIE:  48 5a f4 8d  d9 89 84 f8
+| RCOOKIE:  74 b8 85 b0  9a a4 a0 0a
+| state hash entry 18
+| v1 peer and cookies match on #1, provided msgid 00000000 vs 00000000
+| v1 state object #1 found, in STATE_MAIN_R1
+| processing connection mytunnel
+| got payload 0x10(ISAKMP_NEXT_KE) needed: 0x410 opt: 0x102080
+| ***parse ISAKMP Key Exchange Payload:
+|    length: 196
+| got payload 0x400(ISAKMP_NEXT_NONCE) needed: 0x400 opt: 0x102080
+| ***parse ISAKMP Nonce Payload:
+|    length: 20
+| DH public value received:
+|   34 9b e8 87  71 65 58 6d  2c 10 89 6e  7a ce 8f d7
+|   00 8b 60 d8  fd bf 5a 8b  c8 9f 84 3b  0e cc 0b 7a
+|   33 d2 2f ea  ce e2 80 ce  96 02 10 1a  46 b6 91 db
+|   70 39 9f 81  4e 41 f3 39  eb 43 e6 bf  af 0d d7 14
+|   5c a0 a6 c1  95 63 8e 19  a6 7e 18 75  7c 20 c2 4a
+|   f1 47 09 fa  77 52 dc 05  d9 65 e7 68  41 a1 85 23
+|   2d ba f9 29  82 35 d4 c7  e3 88 5f 6a  d1 27 a0 df
+|   14 57 98 43  05 0e 31 70  8d e4 9a a4  9a 6f 50 07
+|   30 3d da 84  6a ce 04 92  0a 5e ad 30  64 e6 8c 12
+|   f9 3c e7 6e  e0 f5 cb 8f  63 ee e4 09  f3 6a b3 c3
+|   d0 80 85 b6  ae 07 c8 1e  c1 0d 68 c7  21 d3 3b 2c
+|   b1 8e 15 ac  10 65 94 45  7d a9 24 ec  78 3f a7 db
+| inI2: checking NAT-T: 0 and 0
+| 0: w->pcw_dead: 0 w->pcw_work: 0 cnt: 1
+| asking helper 0 to do build_kenonce op on seq: 1 (len=2760, pcw_work=1)
+| crypto helper write of request: cnt=2760<wlen=2760.  
+| deleting event for #1
+! helper 0 read 2752+4/2760 bytesfd: 8
+! helper 0 doing build_kenonce op id: 1
+| inserting event EVENT_CRYPTO_FAILED, timeout in 300 seconds for #1 
+| event added after event EVENT_PENDING_PHASE2
+| complete state transition with STF_SUSPEND
+! Local DH secret:
+| * processed 0 messages from cryptographic helpers 
+| next event EVENT_PENDING_DDNS in 39 seconds
+!   98 f2 09 00  ae 94 d3 63  54 2d da 79  12 14 26 f0
+| next event EVENT_PENDING_DDNS in 39 seconds
+!   e6 92 62 8d  c9 e9 50 ed  5b 28 76 60  4f d8 82 63
+! Public DH value sent:
+!   09 79 24 23  be 13 e1 75  81 db 6b e2  aa 53 bf 5e
+!   2a d4 73 99  b3 a3 11 1d  2c f0 b5 fd  bb 15 73 32
+!   b4 3d e7 0c  de ad 5e 66  00 88 f4 35  b9 ca fe 0e
+!   b6 e9 8f 6d  1c 00 c1 6e  05 c2 30 4c  d1 68 ce 18
+!   a0 66 bb 43  89 f3 c5 22  46 6b 96 b4  bc 61 5b 3f
+!   c2 e4 4d 50  39 4e a5 0d  0d 80 74 2a  af ba 33 e2
+!   5f 17 ab af  8e fe cc e8  a0 06 c6 fe  7e 30 e6 24
+!   1f 52 44 a1  90 6a e4 49  62 e8 3b 61  11 ae 08 19
+!   b5 7e 21 7c  b9 37 92 7b  36 21 3b c5  37 83 7a bc
+!   93 ba b5 57  89 bb a9 a2  28 96 21 a7  99 f6 3d 13
+!   ee 6e 70 91  ef c8 73 99  55 73 6c 80  f9 e2 44 62
+!   85 0b 0a 01  1b 49 c2 55  9b e9 ff c5  d2 bc 9e 9a
+! Generated nonce:
+!   9a fc f6 4c  ff 02 52 b3  ba bf 5b df  03 b3 14 69
+|  
+| helper 0 has finished work (cnt now 1)
+| helper 0 replies to id: q#1
+| calling callback function 0x55c066a81240
+| main inI2_outR2: calculated ke+nonce, sending R2
+| processing connection mytunnel
+| **emit ISAKMP Message:
+|    initiator cookie:
+|   48 5a f4 8d  d9 89 84 f8
+|    responder cookie:
+|   74 b8 85 b0  9a a4 a0 0a
+|    ISAKMP version: ISAKMP Version 1.0 (rfc2407)
+|    exchange type: ISAKMP_XCHG_IDPROT
+|    flags: none
+|    message ID:  00 00 00 00
+| ***emit ISAKMP Key Exchange Payload:
+| emitting 192 raw bytes of keyex value into ISAKMP Key Exchange Payload
+| keyex value  09 79 24 23  be 13 e1 75  81 db 6b e2  aa 53 bf 5e
+| keyex value  2a d4 73 99  b3 a3 11 1d  2c f0 b5 fd  bb 15 73 32
+| keyex value  b4 3d e7 0c  de ad 5e 66  00 88 f4 35  b9 ca fe 0e
+| keyex value  b6 e9 8f 6d  1c 00 c1 6e  05 c2 30 4c  d1 68 ce 18
+| keyex value  a0 66 bb 43  89 f3 c5 22  46 6b 96 b4  bc 61 5b 3f
+| keyex value  c2 e4 4d 50  39 4e a5 0d  0d 80 74 2a  af ba 33 e2
+| keyex value  5f 17 ab af  8e fe cc e8  a0 06 c6 fe  7e 30 e6 24
+| keyex value  1f 52 44 a1  90 6a e4 49  62 e8 3b 61  11 ae 08 19
+| keyex value  b5 7e 21 7c  b9 37 92 7b  36 21 3b c5  37 83 7a bc
+| keyex value  93 ba b5 57  89 bb a9 a2  28 96 21 a7  99 f6 3d 13
+| keyex value  ee 6e 70 91  ef c8 73 99  55 73 6c 80  f9 e2 44 62
+| keyex value  85 0b 0a 01  1b 49 c2 55  9b e9 ff c5  d2 bc 9e 9a
+| emitting length of ISAKMP Key Exchange Payload: 196
+| ***emit ISAKMP Nonce Payload:
+| emitting 16 raw bytes of Nr into ISAKMP Nonce Payload
+| Nr  9a fc f6 4c  ff 02 52 b3  ba bf 5b df  03 b3 14 69
+| emitting length of ISAKMP Nonce Payload: 20
+| emitting length of ISAKMP Message: 244
+| main inI2_outR2: starting async DH calculation (group=5)
+| started looking for secret for 10.0.2.15->10.0.2.14 of kind PPK_PSK
+| actually looking for secret for 10.0.2.15->10.0.2.14 of kind PPK_PSK
+| line 16: key type PPK_PSK(10.0.2.15) to type PPK_PSK 
+| 1: compared key 10.0.2.15 to 10.0.2.15 / 10.0.2.14 -> 8
+| 2: compared key 10.0.2.14 to 10.0.2.15 / 10.0.2.14 -> 12
+| line 16: match=12 
+| best_match 0>12 line=16
+| line 1: key type PPK_PSK(10.0.2.15) to type PPK_RSA 
+| concluding with best_match=12 lineno=16
+| parent1 type: 7 group: 5 len: 2760 
+| 0: w->pcw_dead: 0 w->pcw_work: 0 cnt: 1
+| asking helper 0 to do compute dh+iv op on seq: 2 (len=2760, pcw_work=1)
+| crypto helper write of request: cnt=2760<wlen=2760.  
+| deleting event for #1
+! helper 0 read 2752+4/2760 bytesfd: 8
+| inserting event EVENT_CRYPTO_FAILED, timeout in 300 seconds for #1 
+| event added after event EVENT_PENDING_PHASE2
+! helper 0 doing compute dh+iv op id: 2
+| started dh_secretiv, returned: stf=STF_SUSPEND 
+| complete state transition with STF_OK
+! peer's g:   34 9b e8 87  71 65 58 6d  2c 10 89 6e  7a ce 8f d7
+"mytunnel" #1: transition from state STATE_MAIN_R1 to state STATE_MAIN_R2
+| deleting event for #1
+! peer's g:   00 8b 60 d8  fd bf 5a 8b  c8 9f 84 3b  0e cc 0b 7a
+| sending reply packet to 10.0.2.14:500 (from port 500)
+| sending 244 bytes for STATE_MAIN_R1 through enp0s3:500 to 10.0.2.14:500 (using #1)
+! peer's g:   33 d2 2f ea  ce e2 80 ce  96 02 10 1a  46 b6 91 db
+|   48 5a f4 8d  d9 89 84 f8  74 b8 85 b0  9a a4 a0 0a
+|   04 10 02 00  00 00 00 00  00 00 00 f4  0a 00 00 c4
+! peer's g:   70 39 9f 81  4e 41 f3 39  eb 43 e6 bf  af 0d d7 14
+|   09 79 24 23  be 13 e1 75  81 db 6b e2  aa 53 bf 5e
+|   2a d4 73 99  b3 a3 11 1d  2c f0 b5 fd  bb 15 73 32
+! peer's g:   5c a0 a6 c1  95 63 8e 19  a6 7e 18 75  7c 20 c2 4a
+|   b4 3d e7 0c  de ad 5e 66  00 88 f4 35  b9 ca fe 0e
+|   b6 e9 8f 6d  1c 00 c1 6e  05 c2 30 4c  d1 68 ce 18
+! peer's g:   f1 47 09 fa  77 52 dc 05  d9 65 e7 68  41 a1 85 23
+|   a0 66 bb 43  89 f3 c5 22  46 6b 96 b4  bc 61 5b 3f
+|   c2 e4 4d 50  39 4e a5 0d  0d 80 74 2a  af ba 33 e2
+! peer's g:   2d ba f9 29  82 35 d4 c7  e3 88 5f 6a  d1 27 a0 df
+|   5f 17 ab af  8e fe cc e8  a0 06 c6 fe  7e 30 e6 24
+|   1f 52 44 a1  90 6a e4 49  62 e8 3b 61  11 ae 08 19
+! peer's g:   14 57 98 43  05 0e 31 70  8d e4 9a a4  9a 6f 50 07
+|   b5 7e 21 7c  b9 37 92 7b  36 21 3b c5  37 83 7a bc
+|   93 ba b5 57  89 bb a9 a2  28 96 21 a7  99 f6 3d 13
+|   ee 6e 70 91  ef c8 73 99  55 73 6c 80  f9 e2 44 62
+! peer's g:   30 3d da 84  6a ce 04 92  0a 5e ad 30  64 e6 8c 12
+|   85 0b 0a 01  1b 49 c2 55  9b e9 ff c5  d2 bc 9e 9a
+|   00 00 00 14  9a fc f6 4c  ff 02 52 b3  ba bf 5b df
+! peer's g:   f9 3c e7 6e  e0 f5 cb 8f  63 ee e4 09  f3 6a b3 c3
+|   03 b3 14 69
+| inserting event EVENT_RETRANSMIT, timeout in 10 seconds for #1 (head of queue)
+! peer's g:   d0 80 85 b6  ae 07 c8 1e  c1 0d 68 c7  21 d3 3b 2c
+"mytunnel" #1: STATE_MAIN_R2: sent MR2, expecting MI3
+| modecfg pull: noquirk policy:push not-client
+! peer's g:   b1 8e 15 ac  10 65 94 45  7d a9 24 ec  78 3f a7 db
+| phase 1 is done, looking for phase 2 to unpend
+| * processed 1 messages from cryptographic helpers 
+| next event EVENT_RETRANSMIT in 10 seconds for #1 (2020-02-04 10:52:47)
+| next event EVENT_RETRANSMIT in 10 seconds for #1 (2020-02-04 10:52:47)
+! long term secret:   98 f2 09 00  ae 94 d3 63  54 2d da 79  12 14 26 f0
+! long term secret:   e6 92 62 8d  c9 e9 50 ed  5b 28 76 60  4f d8 82 63
+! calc_dh_shared(): time elapsed (OAKLEY_GROUP_MODP1536): 433 usec
+! DH shared-secret:
+!   e7 63 2a 99  2c f5 0a 79  51 30 c5 49  b1 39 1a 38
+!   e5 18 1a c2  7c cf a7 ba  a1 04 2a 9c  b7 79 d6 9d
+!   5f 1b 22 25  67 8e ca 74  6e 95 a3 3a  e7 df e4 8f
+!   5f 6b e0 bd  a3 04 7b 74  10 3d b6 45  b6 3e 62 53
+!   41 a5 57 a5  b7 44 cc f3  87 ad cd f7  e6 60 9b 7e
+!   12 0e 7e 6d  15 50 d1 9d  8b 3f 79 8f  d3 d3 e4 d8
+!   7d 8c 31 97  e0 0a 8f d1  de 2f 07 a4  85 22 6d f2
+!   26 28 49 c4  90 d8 c8 b8  71 20 da 85  fb c1 61 0a
+!   1b 1c 96 60  c1 41 49 2c  6c 03 5e 5c  b0 2b 9e 86
+!   0f c7 f6 b1  3d e4 fe 6c  20 33 d6 88  7e ab 7c 83
+!   1c ab 1d 8c  e1 b7 49 29  93 39 80 6c  68 3e 80 ad
+!   eb 88 84 76  85 8f ea fc  07 a1 b1 51  24 71 8c 5a
+! Skey inputs (PSK+NI+NR)
+! ni:   df b1 6a 0f  c4 68 a7 5a  99 85 a5 08  68 d8 13 0a
+! nr:   9a fc f6 4c  ff 02 52 b3  ba bf 5b df  03 b3 14 69
+! keyid:   b9 34 8f ad  47 62 df 8a  31 aa ef 30  3c 7e fa 88
+! keyid:   7a a5 11 ec
+! NSS: end of key computation 
+! DH_i:  34 9b e8 87  71 65 58 6d  2c 10 89 6e  7a ce 8f d7
+! DH_i:  00 8b 60 d8  fd bf 5a 8b  c8 9f 84 3b  0e cc 0b 7a
+! DH_i:  33 d2 2f ea  ce e2 80 ce  96 02 10 1a  46 b6 91 db
+! DH_i:  70 39 9f 81  4e 41 f3 39  eb 43 e6 bf  af 0d d7 14
+! DH_i:  5c a0 a6 c1  95 63 8e 19  a6 7e 18 75  7c 20 c2 4a
+! DH_i:  f1 47 09 fa  77 52 dc 05  d9 65 e7 68  41 a1 85 23
+! DH_i:  2d ba f9 29  82 35 d4 c7  e3 88 5f 6a  d1 27 a0 df
+! DH_i:  14 57 98 43  05 0e 31 70  8d e4 9a a4  9a 6f 50 07
+! DH_i:  30 3d da 84  6a ce 04 92  0a 5e ad 30  64 e6 8c 12
+! DH_i:  f9 3c e7 6e  e0 f5 cb 8f  63 ee e4 09  f3 6a b3 c3
+! DH_i:  d0 80 85 b6  ae 07 c8 1e  c1 0d 68 c7  21 d3 3b 2c
+! DH_i:  b1 8e 15 ac  10 65 94 45  7d a9 24 ec  78 3f a7 db
+! DH_r:  09 79 24 23  be 13 e1 75  81 db 6b e2  aa 53 bf 5e
+! DH_r:  2a d4 73 99  b3 a3 11 1d  2c f0 b5 fd  bb 15 73 32
+! DH_r:  b4 3d e7 0c  de ad 5e 66  00 88 f4 35  b9 ca fe 0e
+! DH_r:  b6 e9 8f 6d  1c 00 c1 6e  05 c2 30 4c  d1 68 ce 18
+! DH_r:  a0 66 bb 43  89 f3 c5 22  46 6b 96 b4  bc 61 5b 3f
+! DH_r:  c2 e4 4d 50  39 4e a5 0d  0d 80 74 2a  af ba 33 e2
+! DH_r:  5f 17 ab af  8e fe cc e8  a0 06 c6 fe  7e 30 e6 24
+! DH_r:  1f 52 44 a1  90 6a e4 49  62 e8 3b 61  11 ae 08 19
+! DH_r:  b5 7e 21 7c  b9 37 92 7b  36 21 3b c5  37 83 7a bc
+! DH_r:  93 ba b5 57  89 bb a9 a2  28 96 21 a7  99 f6 3d 13
+! DH_r:  ee 6e 70 91  ef c8 73 99  55 73 6c 80  f9 e2 44 62
+! DH_r:  85 0b 0a 01  1b 49 c2 55  9b e9 ff c5  d2 bc 9e 9a
+! end of IV generation 
+! Skeyid:    b9 34 8f ad  47 62 df 8a  31 aa ef 30  3c 7e fa 88
+! Skeyid:    7a a5 11 ec
+! Skeyid_d:  3e 01 e2 46  f6 2a e8 e6  9e 64 09 3f  82 0d 76 a3
+! Skeyid_d:  93 d2 e0 a4
+! Skeyid_a:  d0 e3 09 e5  af 54 94 d2  90 86 52 99  1a cd f5 f3
+! Skeyid_a:  96 2d 51 c9
+! Skeyid_e:  82 f2 a8 0d  07 c8 dc dc  c3 f6 70 72  52 de 8c 38
+! Skeyid_e:  22 3b 17 29
+! enc key:  82 f2 a8 0d  07 c8 dc dc  c3 f6 70 72  52 de 8c 38
+! IV:  ad 2b 52 d9  b8 76 d5 5f  20 5b 9d 73  87 3e 71 66
+! IV:  80 b4 b8 ee
+|  
+| helper 0 has finished work (cnt now 1)
+| helper 0 replies to id: q#2
+| calling callback function 0x55c066a80ae0
+| main inI2_outR2: calculated DH finished
+| processing connection mytunnel
+| WARNING: /media/sf_Right_shared/openswan-2.6.51.5-crash/programs/pluto/crypt_start_dh.c:160: encryptor 'aes' expects keylen 16/128, SA #1 INITIATOR keylen is 20
+| WARNING: /media/sf_Right_shared/openswan-2.6.51.5-crash/programs/pluto/crypt_start_dh.c:160: encryptor 'aes' expects keylen 16/128, SA #1 RESPONDER keylen is 0
+| WARNING: /media/sf_Right_shared/openswan-2.6.51.5-crash/programs/pluto/ikev1_main.c:1206: encryptor 'aes' expects keylen 16/128, SA #1 INITIATOR keylen is 20
+| WARNING: /media/sf_Right_shared/openswan-2.6.51.5-crash/programs/pluto/ikev1_main.c:1206: encryptor 'aes' expects keylen 16/128, SA #1 RESPONDER keylen is 0
+| * processed 1 messages from cryptographic helpers 
+| next event EVENT_RETRANSMIT in 10 seconds for #1 (2020-02-04 10:52:47)
+| next event EVENT_RETRANSMIT in 10 seconds for #1 (2020-02-04 10:52:47)
+|  
+| *received 76 bytes from 10.0.2.14:500 on enp0s3 (port=500) at 2020-02-04 10:52:48
+|   48 5a f4 8d  d9 89 84 f8  74 b8 85 b0  9a a4 a0 0a
+|   05 10 02 01  00 00 00 00  00 00 00 4c  9d f4 95 99
+|   b2 f7 9d 73  8d 5f d3 68  9f fd 73 3e  a6 cf 64 9c
+|   ac d9 c9 05  4d 23 7b da  98 17 8d eb  75 9f 61 42
+|   31 b3 b5 71  74 54 74 0e  49 dd af d7
+| **parse ISAKMP Message:
+|    initiator cookie:
+|   48 5a f4 8d  d9 89 84 f8
+|    responder cookie:
+|   74 b8 85 b0  9a a4 a0 0a
+|    ISAKMP version: ISAKMP Version 1.0 (rfc2407)
+|    exchange type: ISAKMP_XCHG_IDPROT
+|    flags: ISAKMP_FLAG_ENCRYPTION
+|    message ID:  00 00 00 00
+|    length: 76
+|  processing version=1.0 packet with exchange type=ISAKMP_XCHG_IDPROT (2), msgid: 00000000
+| ICOOKIE:  48 5a f4 8d  d9 89 84 f8
+| RCOOKIE:  74 b8 85 b0  9a a4 a0 0a
+| state hash entry 18
+| v1 peer and cookies match on #1, provided msgid 00000000 vs 00000000
+| v1 state object #1 found, in STATE_MAIN_R2
+| processing connection mytunnel
+| received encrypted packet from 10.0.2.14:500
+| decrypting 48 bytes using algorithm OAKLEY_AES_CBC
+| decrypted:
+|   08 00 00 0c  01 00 00 00  0a 00 02 0e  00 00 00 18
+|   d7 45 04 db  0b 6c 9b ed  51 f5 47 fc  11 a5 b9 4d
+|   6d 7c 26 65  00 00 00 00  00 00 00 00  00 00 00 00
+| next IV:  75 9f 61 42  31 b3 b5 71  74 54 74 0e  49 dd af d7
+| got payload 0x20(ISAKMP_NEXT_ID) needed: 0x120 opt: 0x2080
+| ***parse ISAKMP Identification Payload:
+|    length: 12
+|    ID type: ID_IPV4_ADDR
+|    DOI specific A: 0
+|    DOI specific B: 0
+|      obj:   0a 00 02 0e
+| got payload 0x100(ISAKMP_NEXT_HASH) needed: 0x100 opt: 0x2080
+| ***parse ISAKMP Hash Payload:
+|    length: 24
+| removing 12 bytes of padding
+"mytunnel" #1: Main mode peer ID is ID_IPV4_ADDR: '10.0.2.14'
+| refine_connection: starting with mytunnel
+| started looking for secret for 10.0.2.15->10.0.2.14 of kind PPK_PSK
+| actually looking for secret for 10.0.2.15->10.0.2.14 of kind PPK_PSK
+| line 16: key type PPK_PSK(10.0.2.15) to type PPK_PSK 
+| 1: compared key 10.0.2.15 to 10.0.2.15 / 10.0.2.14 -> 8
+| 2: compared key 10.0.2.14 to 10.0.2.15 / 10.0.2.14 -> 12
+| line 16: match=12 
+| best_match 0>12 line=16
+| line 1: key type PPK_PSK(10.0.2.15) to type PPK_RSA 
+| concluding with best_match=12 lineno=16
+|    match_id a=10.0.2.14
+|             b=10.0.2.14
+|    results  matched
+|   trusted_ca called with a=(empty) b=(empty)
+| refine_connection: checking mytunnel against mytunnel, best=(none) with match=1(id=1/ca=1/reqca=1)
+| refine_connection: checked mytunnel against mytunnel, now for see if best
+| started looking for secret for 10.0.2.15->10.0.2.14 of kind PPK_PSK
+| actually looking for secret for 10.0.2.15->10.0.2.14 of kind PPK_PSK
+| line 16: key type PPK_PSK(10.0.2.15) to type PPK_PSK 
+| 1: compared key 10.0.2.15 to 10.0.2.15 / 10.0.2.14 -> 8
+| 2: compared key 10.0.2.14 to 10.0.2.15 / 10.0.2.14 -> 12
+| line 16: match=12 
+| best_match 0>12 line=16
+| line 1: key type PPK_PSK(10.0.2.15) to type PPK_RSA 
+| concluding with best_match=12 lineno=16
+| offered CA: '%none'
+| hashing 88 bytes of SA
+| authentication succeeded
+| thinking about whether to send my certificate:
+|   I have RSA key: OAKLEY_PRESHARED_KEY cert.type: CERT_NONE 
+|   sendcert: CERT_SENDIFASKED and I did not get a certificate request 
+|   so do not send cert.
+| I did not send a certificate because digital signatures are not being used. (PSK)
+| **emit ISAKMP Message:
+|    initiator cookie:
+|   48 5a f4 8d  d9 89 84 f8
+|    responder cookie:
+|   74 b8 85 b0  9a a4 a0 0a
+|    ISAKMP version: ISAKMP Version 1.0 (rfc2407)
+|    exchange type: ISAKMP_XCHG_IDPROT
+|    flags: ISAKMP_FLAG_ENCRYPTION
+|    message ID:  00 00 00 00
+| ***emit ISAKMP Identification Payload (IPsec DOI):
+|    ID type: ID_IPV4_ADDR
+|    Protocol ID: 0
+|    port: 0
+| emitting 4 raw bytes of my identity into ISAKMP Identification Payload (IPsec DOI)
+| my identity  0a 00 02 0f
+| emitting length of ISAKMP Identification Payload (IPsec DOI): 12
+| hashing 88 bytes of SA
+| ***emit ISAKMP Hash Payload:
+| emitting 20 raw bytes of HASH_R into ISAKMP Hash Payload
+| HASH_R  88 e0 85 79  dd a4 34 35  c2 7f 83 c8  df 98 d1 15
+| HASH_R  07 a5 c9 8b
+| emitting length of ISAKMP Hash Payload: 24
+| out_vendorid(): sending [CAN-IKEv2]
+| ***emit ISAKMP Vendor ID Payload:
+| emitting 5 raw bytes of V_ID into ISAKMP Vendor ID Payload
+| V_ID  49 4b 45 76  32
+| emitting length of ISAKMP Vendor ID Payload: 9
+| encrypting:
+|   08 00 00 0c  01 00 00 00  0a 00 02 0f  0d 00 00 18
+|   88 e0 85 79  dd a4 34 35  c2 7f 83 c8  df 98 d1 15
+|   07 a5 c9 8b  00 00 00 09  49 4b 45 76  32
+| IV:
+|   75 9f 61 42  31 b3 b5 71  74 54 74 0e  49 dd af d7
+| unpadded size is: 45
+| emitting 3 zero bytes of encryption padding into ISAKMP Message
+| encrypting 48 using OAKLEY_AES_CBC
+| next IV:  0b d0 14 35  06 0a ff 88  42 46 bb 1b  a2 5a d8 07
+| emitting length of ISAKMP Message: 76
+| last encrypted block of Phase 1:
+|   0b d0 14 35  06 0a ff 88  42 46 bb 1b  a2 5a d8 07
+| complete state transition with STF_OK
+"mytunnel" #1: transition from state STATE_MAIN_R2 to state STATE_MAIN_R3
+| deleting event for #1
+| sending reply packet to 10.0.2.14:500 (from port 500)
+| sending 76 bytes for STATE_MAIN_R2 through enp0s3:500 to 10.0.2.14:500 (using #1)
+|   48 5a f4 8d  d9 89 84 f8  74 b8 85 b0  9a a4 a0 0a
+|   05 10 02 01  00 00 00 00  00 00 00 4c  64 09 cb 50
+|   9e cc 37 f6  b0 79 da 4e  6c 4e d0 2f  57 87 03 f3
+|   9a 46 32 64  c0 3e 5a ea  d0 d2 b3 87  0b d0 14 35
+|   06 0a ff 88  42 46 bb 1b  a2 5a d8 07
+| inserting event EVENT_SA_REPLACE, timeout in 3330 seconds for #1 
+| event added after event EVENT_PENDING_PHASE2
+"mytunnel" #1: STATE_MAIN_R3: sent MR3, ISAKMP SA established {auth=OAKLEY_PRESHARED_KEY oursig= theirsig= cipher=aes_128 prf=oakley_sha group=modp1536}
+| modecfg pull: noquirk policy:push not-client
+| phase 1 is done, looking for phase 2 to unpend
+| unpending state #1
+| * processed 0 messages from cryptographic helpers 
+| next event EVENT_PENDING_DDNS in 38 seconds
+| next event EVENT_PENDING_DDNS in 38 seconds
+|  
+| *received 332 bytes from 10.0.2.14:500 on enp0s3 (port=500) at 2020-02-04 10:52:49
+|   48 5a f4 8d  d9 89 84 f8  74 b8 85 b0  9a a4 a0 0a
+|   08 10 20 01  74 64 37 23  00 00 01 4c  2c 38 88 28
+|   67 f8 b8 20  a6 a0 49 25  b2 a4 c0 09  6f 49 dc 53
+|   62 52 70 ca  dd a1 bb a6  cc 2c 64 fd  a3 8a 81 03
+|   d0 4f b4 3f  34 61 8d ea  cf 73 f3 53  94 32 6a 9e
+|   6e 52 1a 83  48 c3 2f d5  ce 8e e3 f0  29 ba e6 a3
+|   53 78 19 07  fa 03 05 e3  1e 0e da b4  52 75 29 a4
+|   ae 0c aa 12  03 0e b9 53  bf 49 98 53  02 27 8b 59
+|   a0 68 08 98  02 8b f5 e4  42 d2 51 b0  26 c0 06 64
+|   6e 19 68 6a  66 6a 57 37  0f 11 7e 98  50 50 f0 5d
+|   d2 a0 c7 ca  32 c4 3c ec  bf 3d e7 25  f3 eb 47 7b
+|   c3 6e d2 2c  b3 14 4e 2a  cc 20 36 27  a2 6f 03 aa
+|   f3 02 e9 91  87 84 f2 3e  37 a6 dd 0d  0a 42 ec 09
+|   cc 96 52 f8  5e 3e 91 c0  f7 35 19 fd  57 62 a8 4d
+|   cd bd b9 b0  f4 ff 2b bc  c2 26 92 7e  44 74 70 40
+|   f7 29 79 bf  85 f6 87 a4  b3 c8 28 c5  9e 91 63 c3
+|   16 ef f6 47  86 d3 fc f1  b7 23 81 ea  dc df cb 5c
+|   74 db 39 72  a2 e7 a4 60  2e 0c c4 cf  40 3a 60 54
+|   16 59 b0 93  bc ee a4 19  ec d6 4a 8c  96 6c d4 16
+|   5c c1 cf 39  3c 0c 9d 57  ac f4 f5 6c  a5 4d b3 33
+|   e2 d6 22 4a  64 e2 27 66  6c 03 45 bd
+| **parse ISAKMP Message:
+|    initiator cookie:
+|   48 5a f4 8d  d9 89 84 f8
+|    responder cookie:
+|   74 b8 85 b0  9a a4 a0 0a
+|    ISAKMP version: ISAKMP Version 1.0 (rfc2407)
+|    exchange type: ISAKMP_XCHG_QUICK
+|    flags: ISAKMP_FLAG_ENCRYPTION
+|    message ID:  74 64 37 23
+|    length: 332
+|  processing version=1.0 packet with exchange type=ISAKMP_XCHG_QUICK (32), msgid: 1952724771
+| ICOOKIE:  48 5a f4 8d  d9 89 84 f8
+| RCOOKIE:  74 b8 85 b0  9a a4 a0 0a
+| state hash entry 18
+| v1 peer and cookies match on #1, provided msgid 74643723 vs 00000000
+| v1 state object not found
+| ICOOKIE:  48 5a f4 8d  d9 89 84 f8
+| RCOOKIE:  74 b8 85 b0  9a a4 a0 0a
+| state hash entry 18
+| v1 peer and cookies match on #1, provided msgid 00000000 vs 00000000
+| v1 state object #1 found, in STATE_MAIN_R3
+| processing connection mytunnel
+| last Phase 1 IV:  0b d0 14 35  06 0a ff 88  42 46 bb 1b  a2 5a d8 07
+| current Phase 1 IV:  0b d0 14 35  06 0a ff 88  42 46 bb 1b  a2 5a d8 07
+| computed Phase 2 IV:
+|   95 d7 fd 89  f4 49 5d 69  76 7e 1e de  de ab c4 64
+|   86 31 1e 01
+| received encrypted packet from 10.0.2.14:500
+| decrypting 304 bytes using algorithm OAKLEY_AES_CBC
+| decrypted:
+|   01 00 00 18  a3 f4 0d 2d  0a f2 82 44  84 53 17 7a
+|   1a ea 71 cf  91 e5 b6 86  0a 00 00 38  00 00 00 01
+|   00 00 00 01  00 00 00 2c  00 03 04 01  b8 ab 82 08
+|   00 00 00 20  00 0c 00 00  80 03 00 05  80 04 00 01
+|   80 01 00 01  80 02 70 80  80 05 00 02  80 06 00 80
+|   04 00 00 14  ce ef 24 f5  9e ed 3b cb  43 a8 56 d0
+|   98 b3 19 31  00 00 00 c4  7f ea de 3e  08 7d dc b3
+|   8c 0c d6 54  44 5a a0 09  41 fd d8 4e  aa c6 3c c9
+|   31 07 51 06  d7 f5 d2 41  6a 27 4e 9a  c0 1a 31 af
+|   6a 94 bf 21  dc 0f a8 c1  9b 01 75 7f  bc 48 79 88
+|   44 a6 c0 c6  b3 20 ce a3  be 48 a5 99  e3 31 ab 14
+|   e2 22 c1 56  55 07 3e cc  f4 3d ca ef  3a 5b 7d f6
+|   ed 59 08 01  4d 59 fe c2  c9 ce ce 08  c9 6d 82 c2
+|   4a 2e 15 46  57 02 f9 c8  39 19 f1 31  51 d3 3f 04
+|   a7 df 6f dd  f7 38 62 dc  d3 75 88 7a  22 b3 25 23
+|   f5 5b ed 19  d0 13 8c a7  e5 54 0e f7  c2 85 a9 ff
+|   84 93 29 1a  a4 c6 f8 a3  9c 12 7a 71  a0 a8 bf cc
+|   18 24 77 50  1d 9a 9b 2b  4a 31 31 52  93 2a cd 9a
+|   d5 eb 56 7d  c0 e6 b0 18  00 00 00 00  00 00 00 00
+| next IV:  a5 4d b3 33  e2 d6 22 4a  64 e2 27 66  6c 03 45 bd
+| got payload 0x100(ISAKMP_NEXT_HASH) needed: 0x502 opt: 0x200030
+| ***parse ISAKMP Hash Payload:
+|    length: 24
+| got payload 0x2(ISAKMP_NEXT_SA) needed: 0x402 opt: 0x200030
+| ***parse ISAKMP Security Association Payload:
+|    length: 56
+|    DOI: ISAKMP_DOI_IPSEC
+| got payload 0x400(ISAKMP_NEXT_NONCE) needed: 0x400 opt: 0x200030
+| ***parse ISAKMP Nonce Payload:
+|    length: 20
+| got payload 0x10(ISAKMP_NEXT_KE) needed: 0x0 opt: 0x200030
+| ***parse ISAKMP Key Exchange Payload:
+|    length: 196
+| removing 8 bytes of padding
+| HASH(1) computed:
+|   a3 f4 0d 2d  0a f2 82 44  84 53 17 7a  1a ea 71 cf
+|   91 e5 b6 86
+"mytunnel" #1: the peer proposed: 10.0.2.15/32:0/0 -> 10.0.2.14/32:0/0
+| find_client_connection starting with mytunnel
+|   looking for 10.0.2.15/32:0/0 -> 10.0.2.14/32:0/0
+|   concrete checking against sr#0 10.0.2.15/32 -> 10.0.2.14/32
+|    match_id a=10.0.2.14
+|             b=10.0.2.14
+|    results  matched
+|   trusted_ca called with a=(empty) b=(empty)
+|   fc_try trying mytunnel:10.0.2.15/32:0/0 -> 10.0.2.14/32:0/0 vs mytunnel:<type:%address:0/0 -> <type:%address:0/0
+|   fc_try concluding with mytunnel [128]
+|   fc_try mytunnel gives mytunnel
+|   concluding with d = mytunnel
+| client wildcard: no  port wildcard: no  virtual: no
+| duplicating state object #1
+| creating state object #2 at 0x55c0688e9a70
+| processing connection mytunnel
+| ICOOKIE:  48 5a f4 8d  d9 89 84 f8
+| RCOOKIE:  74 b8 85 b0  9a a4 a0 0a
+| state hash entry 18
+| inserting state object #2 bucket: 18
+| inserting event EVENT_SO_DISCARD, timeout in 0 seconds for #2 (head of queue)
+| ****parse IPsec DOI SIT:
+|    IPsec DOI SIT: SIT_IDENTITY_ONLY
+| ****parse ISAKMP Proposal Payload:
+|    length: 44
+|    proposal number: 0
+|    protocol ID: PROTO_IPSEC_ESP
+|    SPI size: 4
+|    number of transforms: 1
+| parsing 4 raw bytes of ISAKMP Proposal Payload into SPI
+| SPI  b8 ab 82 08
+| *****parse ISAKMP Transform Payload (ESP):
+|    length: 32
+|    transform number: 0
+|    transform ID: ESP_AES
+| ******parse ISAKMP IPsec DOI attribute:
+|    af+type: GROUP_DESCRIPTION
+|    length/value: 5
+|    [5 is OAKLEY_GROUP_MODP1536]
+| ******parse ISAKMP IPsec DOI attribute:
+|    af+type: ENCAPSULATION_MODE
+|    length/value: 1
+|    [1 is ENCAPSULATION_MODE_TUNNEL]
+| ******parse ISAKMP IPsec DOI attribute:
+|    af+type: SA_LIFE_TYPE
+|    length/value: 1
+|    [1 is SA_LIFE_TYPE_SECONDS]
+| ******parse ISAKMP IPsec DOI attribute:
+|    af+type: SA_LIFE_DURATION
+|    length/value: 28800
+| ******parse ISAKMP IPsec DOI attribute:
+|    af+type: AUTH_ALGORITHM
+|    length/value: 2
+|    [2 is AUTH_ALGORITHM_HMAC_SHA1]
+| ******parse ISAKMP IPsec DOI attribute:
+|    af+type: KEY_LENGTH
+|    length/value: 128
+| kernel_alg_esp_enc_ok(12,128): alg_id=12, alg_ivlen=8, alg_minbits=128, alg_maxbits=256, res=0, ret=1
+| DH public value received:
+|   7f ea de 3e  08 7d dc b3  8c 0c d6 54  44 5a a0 09
+|   41 fd d8 4e  aa c6 3c c9  31 07 51 06  d7 f5 d2 41
+|   6a 27 4e 9a  c0 1a 31 af  6a 94 bf 21  dc 0f a8 c1
+|   9b 01 75 7f  bc 48 79 88  44 a6 c0 c6  b3 20 ce a3
+|   be 48 a5 99  e3 31 ab 14  e2 22 c1 56  55 07 3e cc
+|   f4 3d ca ef  3a 5b 7d f6  ed 59 08 01  4d 59 fe c2
+|   c9 ce ce 08  c9 6d 82 c2  4a 2e 15 46  57 02 f9 c8
+|   39 19 f1 31  51 d3 3f 04  a7 df 6f dd  f7 38 62 dc
+|   d3 75 88 7a  22 b3 25 23  f5 5b ed 19  d0 13 8c a7
+|   e5 54 0e f7  c2 85 a9 ff  84 93 29 1a  a4 c6 f8 a3
+|   9c 12 7a 71  a0 a8 bf cc  18 24 77 50  1d 9a 9b 2b
+|   4a 31 31 52  93 2a cd 9a  d5 eb 56 7d  c0 e6 b0 18
+| 0: w->pcw_dead: 0 w->pcw_work: 0 cnt: 1
+| asking helper 0 to do build_kenonce op on seq: 3 (len=2760, pcw_work=1)
+| crypto helper write of request: cnt=2760<wlen=2760.  
+| deleting event for #2
+| inserting event EVENT_CRYPTO_FAILED, timeout in 300 seconds for #2 
+! helper 0 read 2752+4/2760 bytesfd: 8
+! helper 0 doing build_kenonce op id: 3
+| event added after event EVENT_PENDING_PHASE2
+| complete state transition with STF_SUSPEND
+! Local DH secret:
+| * processed 0 messages from cryptographic helpers 
+| next event EVENT_PENDING_DDNS in 37 seconds
+| next event EVENT_PENDING_DDNS in 37 seconds
+!   40 ea cc 23  52 58 3a 76  80 41 3d ea  df 61 53 fc
+!   73 cc 8f df  ba 0b 6b 39  c7 38 31 61  de b0 12 b4
+! Public DH value sent:
+!   67 c8 71 0a  7c 1c e6 a5  1a 19 c0 3e  a1 f7 da ca
+!   6e 10 fe 7e  40 fa d7 82  d8 8f 28 ea  e8 22 be 0f
+!   75 46 e8 34  f1 da 78 b6  4a 63 35 3e  92 b2 bb 8f
+!   66 20 e8 4f  32 71 ee 76  7c 1e 3a ae  c9 b4 98 d3
+!   85 c9 f7 95  c4 ed ae df  a9 6c 7c 77  89 54 96 ab
+!   68 5a 30 6d  45 14 21 f2  75 81 a3 2e  32 37 d4 63
+!   67 f1 fe 47  74 e0 c9 0c  15 a8 a1 df  1f c8 08 d8
+!   24 50 ed 42  b7 f1 e4 15  ed 67 40 73  85 67 59 ba
+!   c2 36 ec 86  e0 2c 7e 18  53 f5 0d 24  f5 24 6a 22
+!   68 df 43 47  89 5c a5 09  ba 3f 3c ae  5b bf 40 0b
+!   bb 69 e0 3d  36 4c ec b2  4e 33 98 01  d6 81 92 30
+!   60 c0 80 82  c7 4d ca 92  75 4e 62 d1  49 d4 92 d1
+! Generated nonce:
+!   f0 b0 e3 54  b3 3f 79 2e  b5 15 9c dc  7e a5 4e 5b
+|  
+| helper 0 has finished work (cnt now 1)
+| helper 0 replies to id: q#3
+| calling callback function 0x55c066a89810
+| quick inI1_outR1: calculated ke+nonce, calculating DH
+| processing connection mytunnel
+| started looking for secret for 10.0.2.15->10.0.2.14 of kind PPK_PSK
+| actually looking for secret for 10.0.2.15->10.0.2.14 of kind PPK_PSK
+| line 16: key type PPK_PSK(10.0.2.15) to type PPK_PSK 
+| 1: compared key 10.0.2.15 to 10.0.2.15 / 10.0.2.14 -> 8
+| 2: compared key 10.0.2.14 to 10.0.2.15 / 10.0.2.14 -> 12
+| line 16: match=12 
+| best_match 0>12 line=16
+| line 1: key type PPK_PSK(10.0.2.15) to type PPK_RSA 
+| concluding with best_match=12 lineno=16
+| 0: w->pcw_dead: 0 w->pcw_work: 0 cnt: 1
+| asking helper 0 to do compute dh(p2) op on seq: 4 (len=2760, pcw_work=1)
+| crypto helper write of request: cnt=2760<wlen=2760.  
+| deleting event for #2
+| inserting event EVENT_CRYPTO_FAILED, timeout in 300 seconds for #2 
+! helper 0 read 2752+4/2760 bytesfd: 8
+| event added after event EVENT_PENDING_PHASE2
+| * processed 1 messages from cryptographic helpers 
+| next event EVENT_PENDING_DDNS in 37 seconds
+! helper 0 doing compute dh(p2) op id: 4
+| next event EVENT_PENDING_DDNS in 37 seconds
+! peer's g:   7f ea de 3e  08 7d dc b3  8c 0c d6 54  44 5a a0 09
+! peer's g:   41 fd d8 4e  aa c6 3c c9  31 07 51 06  d7 f5 d2 41
+! peer's g:   6a 27 4e 9a  c0 1a 31 af  6a 94 bf 21  dc 0f a8 c1
+! peer's g:   9b 01 75 7f  bc 48 79 88  44 a6 c0 c6  b3 20 ce a3
+! peer's g:   be 48 a5 99  e3 31 ab 14  e2 22 c1 56  55 07 3e cc
+! peer's g:   f4 3d ca ef  3a 5b 7d f6  ed 59 08 01  4d 59 fe c2
+! peer's g:   c9 ce ce 08  c9 6d 82 c2  4a 2e 15 46  57 02 f9 c8
+! peer's g:   39 19 f1 31  51 d3 3f 04  a7 df 6f dd  f7 38 62 dc
+! peer's g:   d3 75 88 7a  22 b3 25 23  f5 5b ed 19  d0 13 8c a7
+! peer's g:   e5 54 0e f7  c2 85 a9 ff  84 93 29 1a  a4 c6 f8 a3
+! peer's g:   9c 12 7a 71  a0 a8 bf cc  18 24 77 50  1d 9a 9b 2b
+! peer's g:   4a 31 31 52  93 2a cd 9a  d5 eb 56 7d  c0 e6 b0 18
+! calc_dh_shared(): time elapsed (OAKLEY_GROUP_MODP1536): 277 usec
+! DH shared-secret:
+!   fe f8 fd 43  6e 69 72 a5  0b e4 11 18  d4 1b 23 2f
+!   a9 21 29 26  85 20 02 18  61 5c af 58  57 32 ad 2c
+!   84 d3 02 cd  e8 df 66 86  52 db 64 21  1d 19 85 9e
+!   6d 0d 04 a8  1f 73 7c eb  30 a0 40 00  44 e7 e9 01
+!   57 a0 73 b4  28 75 ac 6a  b3 c8 94 3a  51 c0 80 75
+!   ff 3c c2 77  5b db 39 c4  99 46 64 fa  86 17 c3 54
+!   24 ae 93 c1  c4 8e 5c 77  c6 90 59 71  9e ff a6 c2
+!   4b 86 fd d4  2d 3b 78 04  45 69 db 4b  7a 54 a3 ae
+!   d4 8d be 1c  41 53 24 a3  1b 96 58 f3  2a 2e 39 b9
+!   b0 a8 2e 0a  4b ba 2a bf  03 56 63 ef  90 ae 38 11
+!   10 ee 93 d8  67 1e 66 3a  3b 3c f3 a8  39 da 4d db
+!   c3 c8 33 9b  c3 e4 6a 82  11 0a 85 ff  ac ba 42 0c
+|  
+| helper 0 has finished work (cnt now 1)
+| helper 0 replies to id: q#4
+| calling callback function 0x55c066a89ac0
+| quick inI1_outR1: calculated DH, sending R1
+| processing connection mytunnel
+| **emit ISAKMP Message:
+|    initiator cookie:
+|   48 5a f4 8d  d9 89 84 f8
+|    responder cookie:
+|   74 b8 85 b0  9a a4 a0 0a
+|    ISAKMP version: ISAKMP Version 1.0 (rfc2407)
+|    exchange type: ISAKMP_XCHG_QUICK
+|    flags: ISAKMP_FLAG_ENCRYPTION
+|    message ID:  74 64 37 23
+| ***emit ISAKMP Hash Payload:
+| emitting 20 zero bytes of HASH into ISAKMP Hash Payload
+| emitting length of ISAKMP Hash Payload: 24
+| ***emit ISAKMP Security Association Payload:
+|    DOI: ISAKMP_DOI_IPSEC
+| ****parse IPsec DOI SIT:
+|    IPsec DOI SIT: SIT_IDENTITY_ONLY
+| ****parse ISAKMP Proposal Payload:
+|    length: 44
+|    proposal number: 0
+|    protocol ID: PROTO_IPSEC_ESP
+|    SPI size: 4
+|    number of transforms: 1
+| parsing 4 raw bytes of ISAKMP Proposal Payload into SPI
+| SPI  b8 ab 82 08
+| *****parse ISAKMP Transform Payload (ESP):
+|    length: 32
+|    transform number: 0
+|    transform ID: ESP_AES
+| ******parse ISAKMP IPsec DOI attribute:
+|    af+type: GROUP_DESCRIPTION
+|    length/value: 5
+|    [5 is OAKLEY_GROUP_MODP1536]
+| ******parse ISAKMP IPsec DOI attribute:
+|    af+type: ENCAPSULATION_MODE
+|    length/value: 1
+|    [1 is ENCAPSULATION_MODE_TUNNEL]
+| ******parse ISAKMP IPsec DOI attribute:
+|    af+type: SA_LIFE_TYPE
+|    length/value: 1
+|    [1 is SA_LIFE_TYPE_SECONDS]
+| ******parse ISAKMP IPsec DOI attribute:
+|    af+type: SA_LIFE_DURATION
+|    length/value: 28800
+| ******parse ISAKMP IPsec DOI attribute:
+|    af+type: AUTH_ALGORITHM
+|    length/value: 2
+|    [2 is AUTH_ALGORITHM_HMAC_SHA1]
+| ******parse ISAKMP IPsec DOI attribute:
+|    af+type: KEY_LENGTH
+|    length/value: 128
+| kernel_alg_esp_enc_ok(12,128): alg_id=12, alg_ivlen=8, alg_minbits=128, alg_maxbits=256, res=0, ret=1
+| ****emit IPsec DOI SIT:
+|    IPsec DOI SIT: SIT_IDENTITY_ONLY
+| ****emit ISAKMP Proposal Payload:
+|    proposal number: 0
+|    protocol ID: PROTO_IPSEC_ESP
+|    SPI size: 4
+|    number of transforms: 1
+| netlink_get_spi: allocated 0x83c44fe3 for esp.0@10.0.2.15
+| emitting 4 raw bytes of SPI into ISAKMP Proposal Payload
+| SPI  83 c4 4f e3
+| *****emit ISAKMP Transform Payload (ESP):
+|    transform number: 0
+|    transform ID: ESP_AES
+| emitting 24 raw bytes of attributes into ISAKMP Transform Payload (ESP)
+| attributes  80 03 00 05  80 04 00 01  80 01 00 01  80 02 70 80
+| attributes  80 05 00 02  80 06 00 80
+| emitting length of ISAKMP Transform Payload (ESP): 32
+| emitting length of ISAKMP Proposal Payload: 44
+| emitting length of ISAKMP Security Association Payload: 56
+"mytunnel" #2: responding to Quick Mode proposal {msgid:23376474}
+"mytunnel" #2:     us: 10.0.2.15
+"mytunnel" #2:   them: 10.0.2.14
+| ***emit ISAKMP Nonce Payload:
+| emitting 16 raw bytes of Nr into ISAKMP Nonce Payload
+| Nr  f0 b0 e3 54  b3 3f 79 2e  b5 15 9c dc  7e a5 4e 5b
+| emitting length of ISAKMP Nonce Payload: 20
+| ***emit ISAKMP Key Exchange Payload:
+| emitting 192 raw bytes of keyex value into ISAKMP Key Exchange Payload
+| keyex value  67 c8 71 0a  7c 1c e6 a5  1a 19 c0 3e  a1 f7 da ca
+| keyex value  6e 10 fe 7e  40 fa d7 82  d8 8f 28 ea  e8 22 be 0f
+| keyex value  75 46 e8 34  f1 da 78 b6  4a 63 35 3e  92 b2 bb 8f
+| keyex value  66 20 e8 4f  32 71 ee 76  7c 1e 3a ae  c9 b4 98 d3
+| keyex value  85 c9 f7 95  c4 ed ae df  a9 6c 7c 77  89 54 96 ab
+| keyex value  68 5a 30 6d  45 14 21 f2  75 81 a3 2e  32 37 d4 63
+| keyex value  67 f1 fe 47  74 e0 c9 0c  15 a8 a1 df  1f c8 08 d8
+| keyex value  24 50 ed 42  b7 f1 e4 15  ed 67 40 73  85 67 59 ba
+| keyex value  c2 36 ec 86  e0 2c 7e 18  53 f5 0d 24  f5 24 6a 22
+| keyex value  68 df 43 47  89 5c a5 09  ba 3f 3c ae  5b bf 40 0b
+| keyex value  bb 69 e0 3d  36 4c ec b2  4e 33 98 01  d6 81 92 30
+| keyex value  60 c0 80 82  c7 4d ca 92  75 4e 62 d1  49 d4 92 d1
+| emitting length of ISAKMP Key Exchange Payload: 196
+| HASH(2) computed:
+|   ff 0b b6 25  5d b3 39 22  c0 ec a8 56  c6 65 5e 46
+|   2e aa 56 f9
+| compute_proto_keymat:needed_len (after ESP enc)=16
+| compute_proto_keymat:needed_len (after ESP auth)=36
+| ESP KEYMAT 
+|   KEYMAT computed:
+|   c5 1d 52 16  53 ef bd ad  8b 2b 28 2e  1c d8 bc 4d
+|   f8 6a 8e 76  67 f1 6d 2c  be 33 58 c3  31 40 dd 4a
+|   d2 6e ab 48
+|   Peer KEYMAT computed:
+|   90 f9 d0 55  20 27 e1 b3  87 f8 47 82  c0 0c d9 6b
+|   cf ea 75 4f  11 2b 03 c0  2e 3c 56 13  1b 13 d7 c9
+|   aa bd a3 b2
+| install_inbound_ipsec_sa() checking if we can route
+| route owner of "mytunnel" unrouted: NULL; eroute owner: NULL
+| could_route called for mytunnel (kind=CK_PERMANENT)
+|    routing is easy, or has resolvable near-conflict
+| checking if this is a replacement state
+|   st=0x55c0688e9a70 ost=(nil) st->serialno=#2 ost->serialno=#0 
+| installing outgoing SA now as refhim=0
+| state #2(mytunnel): setup outbound esp-ipsec between 10.0.2.15<->10.0.2.14 for 10.0.2.15/32...10.0.2.14/32
+| ipcomp maybe
+| esp outbound maybe
+| looking for outbound alg with transid: 12 keylen: 128 auth: 2 for spi=0882abb8 [10.0.2.15->10.0.2.14] 
+| checking transid: 11 keylen: 0 auth: 1 
+| checking transid: 11 keylen: 0 auth: 2 
+| checking transid: 2 keylen: 8 auth: 0 
+| checking transid: 2 keylen: 8 auth: 1 
+| checking transid: 2 keylen: 8 auth: 2 
+| checking transid: 3 keylen: 24 auth: 0 
+| checking transid: 3 keylen: 24 auth: 1 
+| checking transid: 3 keylen: 24 auth: 2 
+| checking transid: 12 keylen: 16 auth: 0 
+| checking transid: 12 keylen: 16 auth: 1 
+| checking transid: 12 keylen: 16 auth: 2 
+| ESP enckey:  90 f9 d0 55  20 27 e1 b3  87 f8 47 82  c0 0c d9 6b
+| ESP authkey:  cf ea 75 4f  11 2b 03 c0  2e 3c 56 13  1b 13 d7 c9
+| ESP authkey:  aa bd a3 b2
+| creating SA spi=b8ab8208@0a00020e proto=50 family=2
+| outgoing SA has refhim=4294901761
+| state #2(mytunnel): setup inbound esp-ipsec between 10.0.2.14<->10.0.2.15 for 10.0.2.14/32...10.0.2.15/32
+| ipcomp maybe
+| esp inbound maybe
+| looking for inbound alg with transid: 12 keylen: 128 auth: 2 for spi=e34fc483 [10.0.2.14->10.0.2.15] 
+| checking transid: 11 keylen: 0 auth: 1 
+| checking transid: 11 keylen: 0 auth: 2 
+| checking transid: 2 keylen: 8 auth: 0 
+| checking transid: 2 keylen: 8 auth: 1 
+| checking transid: 2 keylen: 8 auth: 2 
+| checking transid: 3 keylen: 24 auth: 0 
+| checking transid: 3 keylen: 24 auth: 1 
+| checking transid: 3 keylen: 24 auth: 2 
+| checking transid: 12 keylen: 16 auth: 0 
+| checking transid: 12 keylen: 16 auth: 1 
+| checking transid: 12 keylen: 16 auth: 2 
+| ESP enckey:  c5 1d 52 16  53 ef bd ad  8b 2b 28 2e  1c d8 bc 4d
+| ESP authkey:  f8 6a 8e 76  67 f1 6d 2c  be 33 58 c3  31 40 dd 4a
+| ESP authkey:  d2 6e ab 48
+| updating SA spi=83c44fe3@0a00020f proto=50 family=2
+| creating SPD to 10.0.2.14->spi=00010000@10.0.2.15 proto=4
+"mytunnel" #2: add inbound eroute 10.0.2.14/32:0 --0-> 10.0.2.15/32:0 => tun.10000@10.0.2.15 succeeded
+| encrypting:
+|   01 00 00 18  ff 0b b6 25  5d b3 39 22  c0 ec a8 56
+|   c6 65 5e 46  2e aa 56 f9  0a 00 00 38  00 00 00 01
+|   00 00 00 01  00 00 00 2c  00 03 04 01  83 c4 4f e3
+|   00 00 00 20  00 0c 00 00  80 03 00 05  80 04 00 01
+|   80 01 00 01  80 02 70 80  80 05 00 02  80 06 00 80
+|   04 00 00 14  f0 b0 e3 54  b3 3f 79 2e  b5 15 9c dc
+|   7e a5 4e 5b  00 00 00 c4  67 c8 71 0a  7c 1c e6 a5
+|   1a 19 c0 3e  a1 f7 da ca  6e 10 fe 7e  40 fa d7 82
+|   d8 8f 28 ea  e8 22 be 0f  75 46 e8 34  f1 da 78 b6
+|   4a 63 35 3e  92 b2 bb 8f  66 20 e8 4f  32 71 ee 76
+|   7c 1e 3a ae  c9 b4 98 d3  85 c9 f7 95  c4 ed ae df
+|   a9 6c 7c 77  89 54 96 ab  68 5a 30 6d  45 14 21 f2
+|   75 81 a3 2e  32 37 d4 63  67 f1 fe 47  74 e0 c9 0c
+|   15 a8 a1 df  1f c8 08 d8  24 50 ed 42  b7 f1 e4 15
+|   ed 67 40 73  85 67 59 ba  c2 36 ec 86  e0 2c 7e 18
+|   53 f5 0d 24  f5 24 6a 22  68 df 43 47  89 5c a5 09
+|   ba 3f 3c ae  5b bf 40 0b  bb 69 e0 3d  36 4c ec b2
+|   4e 33 98 01  d6 81 92 30  60 c0 80 82  c7 4d ca 92
+|   75 4e 62 d1  49 d4 92 d1
+| IV:
+|   a5 4d b3 33  e2 d6 22 4a  64 e2 27 66  6c 03 45 bd
+| unpadded size is: 296
+| emitting 8 zero bytes of encryption padding into ISAKMP Message
+| encrypting 304 using OAKLEY_AES_CBC
+| next IV:  a3 d2 ff fa  22 a4 27 ce  91 95 a3 6a  e5 0b 7e cb
+| emitting length of ISAKMP Message: 332
+| finished processing quick inI1
+| complete state transition with STF_OK
+"mytunnel" #2: transition from state STATE_QUICK_R0 to state STATE_QUICK_R1
+| deleting event for #2
+| sending reply packet to 10.0.2.14:500 (from port 500)
+| sending 332 bytes for STATE_QUICK_R0 through enp0s3:500 to 10.0.2.14:500 (using #2)
+|   48 5a f4 8d  d9 89 84 f8  74 b8 85 b0  9a a4 a0 0a
+|   08 10 20 01  74 64 37 23  00 00 01 4c  5e 88 07 84
+|   96 a6 00 79  29 53 0d 05  90 d9 5d 84  68 56 6d b1
+|   8b 3c 82 11  bd 8e d6 a6  51 be 03 c3  44 c3 a6 6d
+|   c3 aa 06 08  a1 b7 24 21  ae f7 0b 9d  0b 56 66 a5
+|   8e c4 9b bf  c6 2b 12 10  39 40 7d 1d  f6 b1 1f d7
+|   9b 03 da 4a  09 64 60 62  0a b3 61 bf  bd fa 7e 12
+|   14 4a 6f 28  82 2b 71 e3  24 9f f6 e7  43 b7 96 57
+|   02 e3 8a fa  8b 2e d8 59  18 98 ae 81  ee 0b b3 77
+|   ff d2 94 11  62 30 32 80  3f c7 4d 04  8d 61 83 56
+|   5d 2a e7 83  64 f5 d8 60  a2 0e dd 38  9e 18 d6 4e
+|   82 a7 1f c1  cf 8b bf 37  72 17 06 1e  ef a6 81 70
+|   8a f4 57 47  88 3c 97 cd  81 a1 1f 18  7d de 26 a5
+|   4f 1c 01 12  fa 14 a2 e1  65 ae 2a 34  40 d1 1e 19
+|   8a 3d 82 2b  92 4b ac 6e  bf 6d d1 45  62 b3 29 64
+|   71 09 89 5a  f0 73 38 fb  a2 e1 10 f5  ce 4d 5c ae
+|   8b b0 a1 58  8f 4e 4a 45  db 96 bf c5  57 7c 87 a7
+|   b2 ca fe 73  b6 ce f2 1d  71 fb 59 a6  43 81 df 6a
+|   03 c2 c7 d6  68 d8 4d 98  ce 8c fa 92  03 23 2c 95
+|   0c 86 7e e7  ae be 6a 8c  7f c3 c4 0c  a3 d2 ff fa
+|   22 a4 27 ce  91 95 a3 6a  e5 0b 7e cb
+| inserting event EVENT_RETRANSMIT, timeout in 10 seconds for #2 (head of queue)
+"mytunnel" #2: STATE_QUICK_R1: sent QR1, inbound IPsec SA installed, expecting QI2
+| modecfg pull: noquirk policy:push not-client
+| phase 1 is done, looking for phase 2 to unpend
+| * processed 1 messages from cryptographic helpers 
+| next event EVENT_RETRANSMIT in 10 seconds for #2 (2020-02-04 10:52:49)
+| next event EVENT_RETRANSMIT in 10 seconds for #2 (2020-02-04 10:52:49)
+|  
+| *received 60 bytes from 10.0.2.14:500 on enp0s3 (port=500) at 2020-02-04 10:52:50
+|   48 5a f4 8d  d9 89 84 f8  74 b8 85 b0  9a a4 a0 0a
+|   08 10 20 01  74 64 37 23  00 00 00 3c  fd 3a 9a ba
+|   81 d6 1d 28  99 43 ca 37  97 b3 0a 5a  f4 d8 fd 8b
+|   d2 76 ad 0e  d8 21 1a a3  68 e8 42 03
+| **parse ISAKMP Message:
+|    initiator cookie:
+|   48 5a f4 8d  d9 89 84 f8
+|    responder cookie:
+|   74 b8 85 b0  9a a4 a0 0a
+|    ISAKMP version: ISAKMP Version 1.0 (rfc2407)
+|    exchange type: ISAKMP_XCHG_QUICK
+|    flags: ISAKMP_FLAG_ENCRYPTION
+|    message ID:  74 64 37 23
+|    length: 60
+|  processing version=1.0 packet with exchange type=ISAKMP_XCHG_QUICK (32), msgid: 1952724771
+| ICOOKIE:  48 5a f4 8d  d9 89 84 f8
+| RCOOKIE:  74 b8 85 b0  9a a4 a0 0a
+| state hash entry 18
+| v1 peer and cookies match on #2, provided msgid 74643723 vs 74643723
+| v1 state object #2 found, in STATE_QUICK_R1
+| processing connection mytunnel
+| received encrypted packet from 10.0.2.14:500
+| decrypting 32 bytes using algorithm OAKLEY_AES_CBC
+| decrypted:
+|   00 00 00 18  6b 3f 14 b4  7c 85 e6 1d  55 04 e0 71
+|   62 71 c2 92  9f c6 f7 6f  00 00 00 00  00 00 00 00
+| next IV:  f4 d8 fd 8b  d2 76 ad 0e  d8 21 1a a3  68 e8 42 03
+| got payload 0x100(ISAKMP_NEXT_HASH) needed: 0x100 opt: 0x0
+| ***parse ISAKMP Hash Payload:
+|    length: 24
+| removing 8 bytes of padding
+| HASH(3) computed:  6b 3f 14 b4  7c 85 e6 1d  55 04 e0 71  62 71 c2 92
+| HASH(3) computed:  9f c6 f7 6f
+| state #2: install_ipsec_sa() for outbound only
+| route owner of "mytunnel" unrouted: NULL; eroute owner: NULL
+| could_route called for mytunnel (kind=CK_PERMANENT)
+| state #2: now setting up incoming SA
+| sr for #2: unrouted (eroute_owner: #0)
+| route owner of "mytunnel" unrouted: NULL; eroute owner: NULL
+| route_and_eroute with c: mytunnel (next: none) ero:null esr:{(nil)} ro:null rosr:{(nil)} and state: 2
+| eroute_connection: between 10.0.2.15<->10.0.2.14
+| creating SPD to 10.0.2.15->spi=00000000@10.0.2.14 proto=4
+"mytunnel" #2: eroute_connection add eroute 10.0.2.15/32:0 --0-> 10.0.2.14/32:0 => tun.0@10.0.2.14 succeeded
+| command executing up-host
+| executing up-host: 2>&1 PLUTO_VERB='up-host' PLUTO_VERSION='2.0' PLUTO_CONNECTION='mytunnel' PLUTO_INTERFACE='enp0s3' PLUTO_NEXT_HOP='10.0.2.14' PLUTO_ME='10.0.2.15' PLUTO_MY_ID='10.0.2.15' PLUTO_MY_CLIENT='10.0.2.15/32' PLUTO_MY_CLIENT_NET='10.0.2.15' PLUTO_MY_CLIENT_MASK='255.255.255.255' PLUTO_MY_PORT='0' PLUTO_MY_PROTOCOL='0' PLUTO_PEER='10.0.2.14' PLUTO_PEER_ID='10.0.2.14' PLUTO_PEER_CLIENT='10.0.2.14/32' PLUTO_PEER_CLIENT_NET='10.0.2.14' PLUTO_PEER_CLIENT_MASK='255.255.255.255' PLUTO_PEER_PORT='0' PLUTO_PEER_PROTOCOL='0' PLUTO_PEER_CA='' PLUTO_STACK='netkey'   PLUTO_CONN_POLICY='PSK+ENCRYPT+TUNNEL+PFS+IKEv2ALLOW+SAREFTRACK' PLUTO_CONN_ADDRFAMILY='ipv4' PLUTO_CONN_CLIENTFAMILY='ipv6' PLUTO_CONN_ENDFAMILY='ipv4' PLUTO_XAUTH_USERNAME=''  PLUTO_IS_PEER_CISCO='0' PLUTO_CISCO_DNS_INFO='' PLUTO_CISCO_DOMAIN_INFO='' PLUTO_PEER_BANNER='' PLUTO_NM_CONFIGURED='0' ipsec _updown
+| route_and_eroute: firewall_notified: true
+| command executing prepare-host
+| executing prepare-host: 2>&1 PLUTO_VERB='prepare-host' PLUTO_VERSION='2.0' PLUTO_CONNECTION='mytunnel' PLUTO_INTERFACE='enp0s3' PLUTO_NEXT_HOP='10.0.2.14' PLUTO_ME='10.0.2.15' PLUTO_MY_ID='10.0.2.15' PLUTO_MY_CLIENT='10.0.2.15/32' PLUTO_MY_CLIENT_NET='10.0.2.15' PLUTO_MY_CLIENT_MASK='255.255.255.255' PLUTO_MY_PORT='0' PLUTO_MY_PROTOCOL='0' PLUTO_PEER='10.0.2.14' PLUTO_PEER_ID='10.0.2.14' PLUTO_PEER_CLIENT='10.0.2.14/32' PLUTO_PEER_CLIENT_NET='10.0.2.14' PLUTO_PEER_CLIENT_MASK='255.255.255.255' PLUTO_PEER_PORT='0' PLUTO_PEER_PROTOCOL='0' PLUTO_PEER_CA='' PLUTO_STACK='netkey'   PLUTO_CONN_POLICY='PSK+ENCRYPT+TUNNEL+PFS+IKEv2ALLOW+SAREFTRACK' PLUTO_CONN_ADDRFAMILY='ipv4' PLUTO_CONN_CLIENTFAMILY='ipv6' PLUTO_CONN_ENDFAMILY='ipv4' PLUTO_XAUTH_USERNAME=''  PLUTO_IS_PEER_CISCO='0' PLUTO_CISCO_DNS_INFO='' PLUTO_CISCO_DOMAIN_INFO='' PLUTO_PEER_BANNER='' PLUTO_NM_CONFIGURED='0' ipsec _updown
+| command executing route-host
+| executing route-host: 2>&1 PLUTO_VERB='route-host' PLUTO_VERSION='2.0' PLUTO_CONNECTION='mytunnel' PLUTO_INTERFACE='enp0s3' PLUTO_NEXT_HOP='10.0.2.14' PLUTO_ME='10.0.2.15' PLUTO_MY_ID='10.0.2.15' PLUTO_MY_CLIENT='10.0.2.15/32' PLUTO_MY_CLIENT_NET='10.0.2.15' PLUTO_MY_CLIENT_MASK='255.255.255.255' PLUTO_MY_PORT='0' PLUTO_MY_PROTOCOL='0' PLUTO_PEER='10.0.2.14' PLUTO_PEER_ID='10.0.2.14' PLUTO_PEER_CLIENT='10.0.2.14/32' PLUTO_PEER_CLIENT_NET='10.0.2.14' PLUTO_PEER_CLIENT_MASK='255.255.255.255' PLUTO_PEER_PORT='0' PLUTO_PEER_PROTOCOL='0' PLUTO_PEER_CA='' PLUTO_STACK='netkey'   PLUTO_CONN_POLICY='PSK+ENCRYPT+TUNNEL+PFS+IKEv2ALLOW+SAREFTRACK' PLUTO_CONN_ADDRFAMILY='ipv4' PLUTO_CONN_CLIENTFAMILY='ipv6' PLUTO_CONN_ENDFAMILY='ipv4' PLUTO_XAUTH_USERNAME=''  PLUTO_IS_PEER_CISCO='0' PLUTO_CISCO_DNS_INFO='' PLUTO_CISCO_DOMAIN_INFO='' PLUTO_PEER_BANNER='' PLUTO_NM_CONFIGURED='0' ipsec _updown
+| route_and_eroute: instance "mytunnel", setting eroute_owner to #2 (was #0) (newest_ipsec_sa=#0)
+| inI2: instance mytunnel[0], setting newest_ipsec_sa to #2 (was #0) (spd.eroute=#2)
+| complete state transition with STF_OK
+"mytunnel" #2: transition from state STATE_QUICK_R1 to state STATE_QUICK_R2
+| deleting event for #2
+| inserting event EVENT_SA_REPLACE, timeout in 28530 seconds for #2 
+| event added after event EVENT_REINIT_SECRET
+"mytunnel" #2: STATE_QUICK_R2: IPsec SA established tunnel mode {ESP=>0xb8ab8208 <0x83c44fe3 xfrm=AES_128-HMAC_SHA1 NATOA=none NATD=none DPD=none}
+| modecfg pull: noquirk policy:push not-client
+| phase 1 is done, looking for phase 2 to unpend
+| * processed 0 messages from cryptographic helpers 
+| next event EVENT_PENDING_DDNS in 36 seconds
+| next event EVENT_PENDING_DDNS in 36 seconds
+|  
+| *received whack message
+| kernel_alg_esp_enc_ok(12,0): alg_id=12, alg_ivlen=8, alg_minbits=128, alg_maxbits=256, res=0, ret=1
+| kernel_alg_esp_auth_keylen(auth=2, sadb_aalg=3): a_keylen=20
+| get esp.b8ab8208@10.0.2.14
+| get esp.83c44fe3@10.0.2.15
+| * processed 0 messages from cryptographic helpers 
+| next event EVENT_PENDING_DDNS in 32 seconds
+| next event EVENT_PENDING_DDNS in 32 seconds
+|  
+| *received whack message
+| kernel_alg_esp_enc_ok(12,0): alg_id=12, alg_ivlen=8, alg_minbits=128, alg_maxbits=256, res=0, ret=1
+| kernel_alg_esp_auth_keylen(auth=2, sadb_aalg=3): a_keylen=20
+| get esp.b8ab8208@10.0.2.14
+| get esp.83c44fe3@10.0.2.15
+| * processed 0 messages from cryptographic helpers 
+| next event EVENT_PENDING_DDNS in 24 seconds
+| next event EVENT_PENDING_DDNS in 24 seconds
+|  
+| *received whack message
+shutting down
+forgetting secrets
+| unreference key: 0x55c0688e6280 (none) cnt 1--
+| processing connection mytunnel
+"mytunnel": deleting connection
+| pass 0: considering CHILD SAs to delete
+| processing connection mytunnel
+| deleting event for #2
+"mytunnel" #2: deleting state #2 (STATE_QUICK_R2)
+| find_phase1_state: found SA #1 for conn 'mytunnel' in state STATE_MAIN_R3
+| **emit ISAKMP Message:
+|    initiator cookie:
+|   48 5a f4 8d  d9 89 84 f8
+|    responder cookie:
+|   74 b8 85 b0  9a a4 a0 0a
+|    ISAKMP version: ISAKMP Version 1.0 (rfc2407)
+|    exchange type: ISAKMP_XCHG_INFO
+|    flags: ISAKMP_FLAG_ENCRYPTION
+|    message ID:  83 b6 7c 19
+| ***emit ISAKMP Hash Payload:
+| emitting 20 zero bytes of HASH(1) into ISAKMP Hash Payload
+| emitting length of ISAKMP Hash Payload: 24
+| ***emit ISAKMP Delete Payload:
+|    DOI: ISAKMP_DOI_IPSEC
+|    protocol ID: 3
+|    SPI size: 4
+|    number of SPIs: 1
+| emitting 4 raw bytes of delete payload into ISAKMP Delete Payload
+| delete payload  83 c4 4f e3
+| emitting length of ISAKMP Delete Payload: 16
+| HASH(1) computed:
+|   97 76 d2 02  34 02 0b de  aa 7e 08 27  0f b4 a6 c0
+|   35 8c d5 3d
+| last Phase 1 IV:  0b d0 14 35  06 0a ff 88  42 46 bb 1b  a2 5a d8 07
+| current Phase 1 IV:  0b d0 14 35  06 0a ff 88  42 46 bb 1b  a2 5a d8 07
+| computed Phase 2 IV:
+|   97 66 24 74  4d bf 39 9e  ab cd 96 6b  b9 cc 63 e9
+|   e5 55 11 e6
+| encrypting:
+|   0c 00 00 18  97 76 d2 02  34 02 0b de  aa 7e 08 27
+|   0f b4 a6 c0  35 8c d5 3d  00 00 00 10  00 00 00 01
+|   03 04 00 01  83 c4 4f e3
+| IV:
+|   97 66 24 74  4d bf 39 9e  ab cd 96 6b  b9 cc 63 e9
+|   e5 55 11 e6
+| unpadded size is: 40
+| emitting 8 zero bytes of encryption padding into ISAKMP Message
+| encrypting 48 using OAKLEY_AES_CBC
+| next IV:  5a 2e b7 7a  78 57 42 51  c5 bd 4f d9  ed 36 29 bd
+| emitting length of ISAKMP Message: 76
+| sending 76 bytes for delete notify through enp0s3:500 to 10.0.2.14:500 (using #1)
+|   48 5a f4 8d  d9 89 84 f8  74 b8 85 b0  9a a4 a0 0a
+|   08 10 05 01  83 b6 7c 19  00 00 00 4c  72 a8 6d 32
+|   a3 32 a7 92  9d 09 2b 0f  16 19 0e 58  0d 66 ca 21
+|   f8 d4 97 89  f7 ea b3 0c  55 e5 e5 3e  5a 2e b7 7a
+|   78 57 42 51  c5 bd 4f d9  ed 36 29 bd
+| deleting event for #2
+| no suspended cryptographic state for 2 
+| removing state object #2
+| ICOOKIE:  48 5a f4 8d  d9 89 84 f8
+| RCOOKIE:  74 b8 85 b0  9a a4 a0 0a
+| state hash entry 18
+| command executing down-host
+| executing down-host: 2>&1 PLUTO_VERB='down-host' PLUTO_VERSION='2.0' PLUTO_CONNECTION='mytunnel' PLUTO_INTERFACE='enp0s3' PLUTO_NEXT_HOP='10.0.2.14' PLUTO_ME='10.0.2.15' PLUTO_MY_ID='10.0.2.15' PLUTO_MY_CLIENT='10.0.2.15/32' PLUTO_MY_CLIENT_NET='10.0.2.15' PLUTO_MY_CLIENT_MASK='255.255.255.255' PLUTO_MY_PORT='0' PLUTO_MY_PROTOCOL='0' PLUTO_PEER='10.0.2.14' PLUTO_PEER_ID='10.0.2.14' PLUTO_PEER_CLIENT='10.0.2.14/32' PLUTO_PEER_CLIENT_NET='10.0.2.14' PLUTO_PEER_CLIENT_MASK='255.255.255.255' PLUTO_PEER_PORT='0' PLUTO_PEER_PROTOCOL='0' PLUTO_PEER_CA='' PLUTO_STACK='netkey'   PLUTO_CONN_POLICY='PSK+ENCRYPT+TUNNEL+PFS+IKEv2ALLOW+SAREFTRACK' PLUTO_CONN_ADDRFAMILY='ipv4' PLUTO_CONN_CLIENTFAMILY='ipv6' PLUTO_CONN_ENDFAMILY='ipv4' PLUTO_XAUTH_USERNAME=''  PLUTO_IS_PEER_CISCO='0' PLUTO_CISCO_DNS_INFO='' PLUTO_CISCO_DOMAIN_INFO='' PLUTO_PEER_BANNER='' PLUTO_NM_CONFIGURED='0' ipsec _updown
+| request to replace with shunt a prospective erouted policy with netkey kernel --- experimental
+| creating SPD to 10.0.2.15->spi=00000104@0.0.0.0 proto=61
+| delete esp.b8ab8208@10.0.2.14
+| creating SPD to 10.0.2.14->spi=00010000@10.0.2.15 proto=255
+"mytunnel" #2: delete (half) inbound eroute 10.0.2.14/32:0 --0-> 10.0.2.15/32:0 => unk255.10000@10.0.2.15 succeeded
+| delete esp.83c44fe3@10.0.2.15
+| pass 1: considering PARENT SAs to delete
+| processing connection mytunnel
+| deleting event for #1
+"mytunnel" #1: deleting state #1 (STATE_MAIN_R3)
+| **emit ISAKMP Message:
+|    initiator cookie:
+|   48 5a f4 8d  d9 89 84 f8
+|    responder cookie:
+|   74 b8 85 b0  9a a4 a0 0a
+|    ISAKMP version: ISAKMP Version 1.0 (rfc2407)
+|    exchange type: ISAKMP_XCHG_INFO
+|    flags: ISAKMP_FLAG_ENCRYPTION
+|    message ID:  12 f8 44 96
+| ***emit ISAKMP Hash Payload:
+| emitting 20 zero bytes of HASH(1) into ISAKMP Hash Payload
+| emitting length of ISAKMP Hash Payload: 24
+| ***emit ISAKMP Delete Payload:
+|    DOI: ISAKMP_DOI_IPSEC
+|    protocol ID: 1
+|    SPI size: 16
+|    number of SPIs: 1
+| emitting 16 raw bytes of delete payload into ISAKMP Delete Payload
+| delete payload  48 5a f4 8d  d9 89 84 f8  74 b8 85 b0  9a a4 a0 0a
+| emitting length of ISAKMP Delete Payload: 28
+| HASH(1) computed:
+|   95 95 df 8a  19 fc 6e 55  ff 84 47 62  b4 05 35 ee
+|   78 eb c4 7d
+| last Phase 1 IV:  0b d0 14 35  06 0a ff 88  42 46 bb 1b  a2 5a d8 07
+| current Phase 1 IV:  0b d0 14 35  06 0a ff 88  42 46 bb 1b  a2 5a d8 07
+| computed Phase 2 IV:
+|   db d2 51 ab  4f cf 75 d3  da 29 ea 33  90 c0 24 a5
+|   91 57 ea 52
+| encrypting:
+|   0c 00 00 18  95 95 df 8a  19 fc 6e 55  ff 84 47 62
+|   b4 05 35 ee  78 eb c4 7d  00 00 00 1c  00 00 00 01
+|   01 10 00 01  48 5a f4 8d  d9 89 84 f8  74 b8 85 b0
+|   9a a4 a0 0a
+| IV:
+|   db d2 51 ab  4f cf 75 d3  da 29 ea 33  90 c0 24 a5
+|   91 57 ea 52
+| unpadded size is: 52
+| emitting 12 zero bytes of encryption padding into ISAKMP Message
+| encrypting 64 using OAKLEY_AES_CBC
+| next IV:  0f fa ea 6f  f1 28 98 77  06 ff 00 0f  1a 5a c0 dc
+| emitting length of ISAKMP Message: 92
+| sending 92 bytes for delete notify through enp0s3:500 to 10.0.2.14:500 (using #1)
+|   48 5a f4 8d  d9 89 84 f8  74 b8 85 b0  9a a4 a0 0a
+|   08 10 05 01  12 f8 44 96  00 00 00 5c  91 5d a6 b1
+|   4d fa df 49  78 41 41 58  66 1c 1e 7f  04 6f 88 4d
+|   b0 f7 6d 93  db 52 fa b7  63 31 3a 3e  ee fe 7e 2c
+|   6a 85 60 75  31 4f 64 5e  8e 35 e7 9d  0f fa ea 6f
+|   f1 28 98 77  06 ff 00 0f  1a 5a c0 dc
+| deleting event for #1
+| no suspended cryptographic state for 1 
+| removing state object #1
+| ICOOKIE:  48 5a f4 8d  d9 89 84 f8
+| RCOOKIE:  74 b8 85 b0  9a a4 a0 0a
+| state hash entry 18
+| request to delete a unrouted policy with netkey kernel --- experimental
+| creating SPD to 10.0.2.15->spi=00000000@0.0.0.0 proto=61
+| creating SPD to 10.0.2.15->spi=00000000@0.0.0.0 proto=61
+| route owner of "mytunnel" unrouted: NULL
+| command executing unroute-host
+| executing unroute-host: 2>&1 PLUTO_VERB='unroute-host' PLUTO_VERSION='2.0' PLUTO_CONNECTION='mytunnel' PLUTO_INTERFACE='enp0s3' PLUTO_NEXT_HOP='10.0.2.14' PLUTO_ME='10.0.2.15' PLUTO_MY_ID='10.0.2.15' PLUTO_MY_CLIENT='10.0.2.15/32' PLUTO_MY_CLIENT_NET='10.0.2.15' PLUTO_MY_CLIENT_MASK='255.255.255.255' PLUTO_MY_PORT='0' PLUTO_MY_PROTOCOL='0' PLUTO_PEER='10.0.2.14' PLUTO_PEER_ID='10.0.2.14' PLUTO_PEER_CLIENT='10.0.2.14/32' PLUTO_PEER_CLIENT_NET='10.0.2.14' PLUTO_PEER_CLIENT_MASK='255.255.255.255' PLUTO_PEER_PORT='0' PLUTO_PEER_PROTOCOL='0' PLUTO_PEER_CA='' PLUTO_STACK='netkey'   PLUTO_CONN_POLICY='PSK+ENCRYPT+TUNNEL+PFS+IKEv2ALLOW+SAREFTRACK' PLUTO_CONN_ADDRFAMILY='ipv4' PLUTO_CONN_CLIENTFAMILY='ipv6' PLUTO_CONN_ENDFAMILY='ipv4'   PLUTO_IS_PEER_CISCO='0' PLUTO_CISCO_DNS_INFO='' PLUTO_CISCO_DOMAIN_INFO='' PLUTO_PEER_BANNER='' PLUTO_NM_CONFIGURED='0' ipsec _updown
+| alg_info_delref(0x55c0688e3c20) alg_info->ref_cnt=1
+| alg_info_delref(0x55c0688e3c20) freeing alg_info
+| alg_info_delref(0x55c0688e3400) alg_info->ref_cnt=1
+| alg_info_delref(0x55c0688e3400) freeing alg_info
+shutting down interface lo/lo ::1:500
+shutting down interface lo/lo 127.0.0.1:500
+shutting down interface enp0s3/enp0s3 10.0.2.15:500
+pluto_crypto_helper: helper [nonnss] (0) is exiting normally 
